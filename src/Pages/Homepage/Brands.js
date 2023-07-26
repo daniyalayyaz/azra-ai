@@ -6,7 +6,7 @@ import React from "react";
 function Brands() {
   return (
     <div className="mx-auto container">
-      <div className="flex flex-wrap flex-row">
+      <div className="flex flex-wrap flex-row mt-[4rem]">
         <Image
           src={"/images/growtify.png"}
           width={194}
