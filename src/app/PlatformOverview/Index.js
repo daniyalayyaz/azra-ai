@@ -5,6 +5,7 @@ import PhysicalTherapy from "./PhysicalTherapy";
 import AnalyticsCard from "./AnalyticsCard";
 import OrthopedicCard from "./OrthopedicCard";
 import Footer from "../Components/Footer";
+import ContactUs from "./ContactUs";
 function Index() {
   return (
     <div className="bg-white">
@@ -44,6 +45,7 @@ function Index() {
         <AnalyticsCard />
         <OrthopedicCard />
       </div>
+      <ContactUs />
       <Footer />
     </div>
   );

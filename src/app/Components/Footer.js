@@ -11,10 +11,7 @@ import {
 function Footer() {
   return (
     <>
-      <footer
-        className="bg-white pb-4 mt-4"
-        style={{ backgroundColor: "#d0eae1" }}
-      >
+      <footer className="bg-white pb-4" style={{ backgroundColor: "#d0eae1" }}>
         <div className="pt-4 sm:pt-10 lg:pt-12 pb-12 md:px-16 ">
           <div className="max-w-screen-3xl px-4 mx-auto ">
             <div className=" md:flex justify-center mt-6">
