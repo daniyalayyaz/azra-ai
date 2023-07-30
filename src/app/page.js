@@ -1,6 +1,6 @@
-import Navbar from "@/Components/Navbar";
-import Home from "@/Pages/Homepage/Index";
-import PlatformOverview from "@/Pages/PlatformOverview/Index";
+import Navbar from "@/app/Components/Navbar";
+import Home from "@/app/Homepage/Index";
+import PlatformOverview from "@/app/PlatformOverview/Index";
 
 export default function App() {
   return (

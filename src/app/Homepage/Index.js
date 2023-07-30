@@ -1,4 +1,4 @@
-import Navbar from "@/Components/Navbar";
+import Navbar from "@/app/Components/Navbar";
 import Brands from "./Brands";
 import Cards from "./Cards";
 function Index() {

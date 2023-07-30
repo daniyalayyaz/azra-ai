@@ -1,4 +1,4 @@
-import SolidButton from "@/Components/SolidButton";
+import SolidButton from "@/app/Components/SolidButton";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
