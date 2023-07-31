@@ -163,8 +163,8 @@ const AzraChat = () => {
     //     </button>
     //   </div>
     // </div>
-    <div className="flex h-screen">
-      <div className="w-1/5 bg-gray-800 text-white flex flex-col justify-center items-center">
+    <div className="flex flex-col md:flex-row h-screen">
+      <div className="w-full md:w-1/5 bg-gray-800 text-white flex flex-col justify-center items-center">
         <div className="flex flex-col justify-center items-center mb-4">
           <select
             className="w-full bg-gray-200 hover:bg-gray-300 text-gray-700 font-semibold py-2 px-4 rounded-md"
@@ -196,29 +196,28 @@ const AzraChat = () => {
       </div>
 
       <div
-        style={{ background: "#816179" }}
         className="flex-1 justify-center items-center"
       >
         <div className="container mx-auto">
-          <div className="flex flex-col justify-center items-center mx-6 my-6 overflow-y-scroll  h-[38rem]">
-            <div className="bg-gray-100 p-3 rounded-md shadow-md w-full">
-              <p className="mx-20 mb-2 text-lg">
+        <div className="flex flex-col mx-6 my-6 overflow-y-scroll md:h-[38rem]">
+            <div className="bg-gray-200 p-3 rounded-md shadow-md max-w-[50%]">
+              <p className="mb-2 mx-5 text-base">
                 Meet Azra Care - your companion built to support you through the
                 journey of orthopaedic surgical recovery.
               </p>
-              <p className="mx-20 mb-2 text-lg">
+              <p className="mb-2 mx-5 text-base">
                 Consider me as your trusted ally, navigating the path to a
                 speedy and seamless orthopedic recovery alongside you. You can
                 ask me
               </p>
               <ul className="list-disc mx-20 ml-[8rem]">
                 {queriesData.map((query) => (
-                  <li className="text-gray-700 text-lg" key={query}>
+                  <li className="text-gray-700 text-base" key={query}>
                     {query}
                   </li>
                 ))}
               </ul>
-              <p className="mt-2 mx-20 text-lg">
+              <p className="mt-2 mx-5 text-base">
                 My mission is to pave an easier path for your recovery journey.
               </p>
             </div>
@@ -239,7 +238,7 @@ const AzraChat = () => {
                           className={
                             ans.role === "user"
                               ? "max-w-[50%] bg-cyan-400 rounded-md p-3 my-6 shadow-md"
-                              : "bg-gray-100 rounded-md p-3 shadow-md max-w-[50%]"
+                              : "bg-gray-200 rounded-md p-3 shadow-md max-w-[50%]"
                           }
                         >
                           {value}
