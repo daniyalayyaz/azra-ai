@@ -11,11 +11,11 @@ import {
 
 const ChatBotCard = () => {
   return (
-    <div
-      className="bg-white "
-      style={{ backgroundImage: `url("/images/chatbot-bg.png")` }}
-    >
-      <div className="mx-auto container">
+    <div className="mx-auto container">
+      <div
+        className=" bg-no-repeat bg-cover bg-right"
+        style={{ backgroundImage: `url("/images/chatbot-bg.png")` }}
+      >
         <div className=" flex justify-center  ">
           <div className="md:flex   justify-between  p-[3em]   ">
             <div className="text-black w-[31.1rem] order-first mr-[12rem] mt-[46rem] ">
