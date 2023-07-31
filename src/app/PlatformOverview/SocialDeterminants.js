@@ -12,11 +12,10 @@ function SocialDeterminants() {
           <div className=" flex justify-center ">
             <div className="md:flex  space-y-2 justify-between  p-[3em] mt-[4rem]">
               <div className="grid grid-cols gap-3  ml-12  w-[100%]  ">
-                <div className="w-full h-auto md:w-1/2 lg:w-1/3">
-                  {/* The parent div will adjust the width of the image based on the screen size */}
+                <div className="">
                   <Image
-                    className="rounded-8 shadow-xl shadow-gray-400 object-cover w-full h-full"
-                    src={"/images/bg.png"}
+                    className=" rounded-[8px]  shadow-xl shadow-gray-400"
+                    src={"/images/SDOH-icon.png"}
                     width={500}
                     height={200}
                     alt=""
