@@ -23,7 +23,7 @@ const Navbar = () => (
             </li>
 
             <li>
-              <Link href="/contact">
+              <Link href="/chatbot">
                 <p className="text-white font-semibold">Chat</p>
               </Link>
             </li>
