@@ -10,19 +10,22 @@ function Index() {
   return (
     <div className="bg-white">
       <div
-        className="bg-cover bg-center h-[32.5rem] bg-fixed rounded-br-3xl"
-        style={{ backgroundImage: `url("/images/bg.jpg")` }}
+        className="bg-cover bg-center h-[36rem] w-full absolute bg-fixed rounded-br-[120px]"
+        style={{ backgroundImage: `url("/images/bg.png")` }}
       >
         <div className="mx-auto container">
           <Navbar />
-          <div className="w-[58rem] mt-[8rem] ml-[10rem]">
+          <div className="w-[70rem] mt-[6rem] ml-[10rem]">
             <h1
-              className="text-white font-bold text-[4rem]"
-              style={{ fontFamily: " Poppins" }}
+              className="text-white boldfont text-[4rem]"
+              style={{ fontFamily: "sans-serif" }}
             >
               The Azra Care Platform
             </h1>
-            <p className="text-white mt-[2rem] font-medium">
+            <p
+              className="text-white mt-[2rem] mediumfont mb-[4rem]"
+              style={{ color: "#DEE1F8" }}
+            >
               Azra Care's platform is a pioneering digital health solution that
               leverages artificial intelligence to revolutionize specialty care.
               Our Care Concierge uses large language models informed by

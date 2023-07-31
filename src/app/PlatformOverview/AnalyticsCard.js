@@ -15,6 +15,7 @@ function AnalyticsCard() {
                 width={700}
                 alt=""
               />
+              <div className="border-2 rounded-lg"></div>
               <p className=" text-left text-[1.5rem] font-semibold mb-2 mt-5 px-[40px]">
                 Advanced Analytics to Bolster Value Based Care
               </p>

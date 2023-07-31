@@ -10,11 +10,11 @@ function SocialDeterminants() {
       <div className="bg-white  ">
         <div className="mx-auto container">
           <div className=" flex justify-center ">
-            <div className="flex  space-y-2 justify-between  md:p-[3em] ">
-              <div className="grid grid-cols gap-3  md:ml-12 md:block hidden w-[35rem] ">
+            <div className="flex  space-y-2 justify-between  p-[3em] ">
+              <div className="grid grid-cols gap-3  ml-12  w-[35rem] ">
                 <div className="  ">
                   <Image
-                    className="border-2 rounded-lg  shadow-lg"
+                    className=" rounded-[8px]  shadow-xl shadow-gray-400"
                     src={"/images/SDOH-icon.png"}
                     width={500}
                     height={200}
@@ -24,19 +24,19 @@ function SocialDeterminants() {
               </div>
               <div className="text-black  order-last  py-4  md:w-2/5 mr-[2rem]">
                 <div
-                  className={`text-[2rem] md:text-[2rem] text-start font-semibold  w-[30rem] text-left`}
+                  className={`text-[2rem]  text-start semiboldfont  w-[30rem] text-left`}
                 >
                   Social Determinants of Health and Health-Related Social Needs
                 </div>
                 <div className=" text-left pt-4 text-[1rem]">
-                  <p className="w-[34rem] text-gray-500  font-regular leading-loose text-start ">
+                  <p className="w-[34rem] text-gray-500  regularfont leading-loose text-start ">
                     Azra Care implements systematic screening for health-related
                     social needs, enabling an accurate depiction of social risk
                     in your patient population and also streamlining resources
                     like transportation, food, and housing for those who need it
                     most.
                   </p>
-                  <div className="flex flex-row flex-start mt-[2rem] font-semibold p-2">
+                  <div className="flex flex-row flex-start mt-[2rem] semiboldfont p-2">
                     <span className=" flex flex-row ">
                       <FontAwesomeIcon
                         className="mx-[2rem]"

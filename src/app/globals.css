@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -16,7 +18,7 @@
   }
 }
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +26,56 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+
+@font-face {
+  font-family: ExtraBold_Font;
+  src: url('./style/Poppins-ExtraBold.ttf');
+
 }
+
+@font-face {
+  font-family: Bold_Font;
+  src: url('./style/Poppins-Bold.ttf');
+
+}
+
+@font-face {
+  font-family: SemiBold_Font;
+  src: url('./style/Poppins-SemiBold.ttf');
+
+}
+
+@font-face {
+  font-family: Medium_Font;
+  src: url('./style/Poppins-Medium.ttf');
+
+}
+
+@font-face {
+  font-family: Regular_Font;
+  src: url('./style/Poppins-Regular.ttf');
+
+}
+
+
+.extraboldfont { 
+  font-family: ExtraBold_Font !important;
+ }
+
+
+ .boldfont { 
+  font-family: Bold_Font !important;
+ }
+ 
+ .semiboldfont { 
+  font-family: SemiBold_Font !important;
+ }
+
+ .mediumfont { 
+  font-family: Medium_Font !important;
+ }
+
+ .regularfont { 
+  font-family: Regular_Font !important;
+ }

@@ -36,7 +36,7 @@ function PhysicalTherapy() {
           style={{ backgroundColor: "#b8a1c5" }}
         >
           <div className="pl-8 pr-[10rem]">
-            <div className={`text-[2rem] text-start font-semibold mx-6`}>
+            <div className={`text-[2rem] text-start semiboldfont mx-6`}>
               Virtual Physical Therapy
             </div>
             <div className="text-left pt-6">

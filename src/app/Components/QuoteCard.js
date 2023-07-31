@@ -6,7 +6,7 @@ function QuoteCard() {
   return (
     <div className="container ">
       <span
-        className="flex flex-row flex-start border rounded-xl md:w-[24.4rem] p-8 "
+        className="flex flex-row flex-start border rounded-xl w-[24.4rem] p-8 "
         style={{ backgroundColor: "#d0eae1", border: "#d0eae1" }}
       >
         <FontAwesomeIcon
@@ -16,7 +16,7 @@ function QuoteCard() {
           width={150}
           height={40}
         />
-        <p className="order-last text-gray">
+        <p className=" text-gray">
           Azra's AI chatbot is equity-focused and evidence based to boost
           patient engagement and bolster patient outcomes in specialty care.
         </p>

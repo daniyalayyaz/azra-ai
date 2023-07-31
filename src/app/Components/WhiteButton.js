@@ -12,7 +12,7 @@ function WhiteButton() {
         className=" border  rounded-xl w-[10em] p-4 justify-between shadow-xl"
         style={{ backgroundColor: "white" }}
       >
-        <p className="ml-[-1.4rem] font-semibold">Learn More</p>
+        <p className="ml-[-1.4rem] mediumfont">Learn More</p>
         <FontAwesomeIcon
           className="ml-[7rem] mt-[-1.3rem]"
           icon={faArrowRight}

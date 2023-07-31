@@ -1,13 +1,12 @@
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Image from "next/image";
 import React from "react";
 
 function SolidButton() {
   return (
-    <div className="text-center text-white mt-[2rem] ml-[-20rem]">
+    <div className="text-center text-white mt-[2rem] ml-[-20rem] regularfont">
       <button
-        className=" border  rounded-xl w-[10em] p-4 justify-between shadow-xl"
+        className=" border  rounded-xl w-[10em] p-4 justify-between shadow-xl shadow-purple-200"
         style={{ backgroundColor: "#60426c" }}
       >
         <p className="ml-[-1.4rem]">Get In Touch</p>
