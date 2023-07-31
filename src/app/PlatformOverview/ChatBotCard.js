@@ -11,10 +11,13 @@ import {
 
 const ChatBotCard = () => {
   return (
-    <div className="bg-white">
+    <div
+      className="bg-white "
+      style={{ backgroundImage: `url("/images/chatbot-bg.png")` }}
+    >
       <div className="mx-auto container">
         <div className=" flex justify-center  ">
-          <div className="flex   justify-between  p-[3em]   ">
+          <div className="md:flex   justify-between  p-[3em]   ">
             <div className="text-black w-[31.1rem] order-first mr-[12rem] mt-[46rem] ">
               <span>
                 <FontAwesomeIcon

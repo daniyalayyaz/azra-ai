@@ -4,7 +4,7 @@ import React from "react";
 function OrthopedicCard() {
   return (
     <div className="mx-auto container">
-      <div className="text-center  mt-[8rem] ml-[2rem]">
+      <div className="text-center  mt-[8rem] md:ml-[2rem] mx-2">
         <div className=" grid md:grid-cols-2 gap-8  place-items-center ">
           <div className=" rounded-xl border-2 ">
             <div className="md:w-[36rem] md:h-[35rem]">
@@ -15,7 +15,7 @@ function OrthopedicCard() {
                 width={700}
                 alt=""
               />
-              <p className=" text-left text-[1.5rem] font-semibold mb-2 mt-5 px-[40px]">
+              <p className=" text-left text-[1.5rem] semiboldfont mb-2 mt-5 px-[40px]">
                 Care Models for Orthopaedic and Musculoskeletal Care
               </p>
               <p className="text-gray-500 text-[16px] font-normal text-left px-[40px] mt-4 leading-loose">
