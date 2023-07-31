@@ -4,7 +4,7 @@ import React from "react";
 function AnalyticsCard() {
   return (
     <div className="mx-auto container">
-      <div className="text-center  mt-[8rem] mr-[2rem]">
+      <div className="text-center  mt-[8rem] md:mr-[2rem] mx-2">
         <div className=" grid md:grid-cols-2 gap-8  place-items-center ">
           <div className=" rounded-xl border-2 ">
             <div className="md:w-[36rem] md:h-[35rem]">
@@ -16,7 +16,7 @@ function AnalyticsCard() {
                 alt=""
               />
               <div className="border-2 rounded-lg"></div>
-              <p className=" text-left text-[1.5rem] font-semibold mb-2 mt-5 px-[40px]">
+              <p className=" text-left text-[1.5rem] semiboldfont mb-2 mt-5 px-[40px]">
                 Advanced Analytics to Bolster Value Based Care
               </p>
               <p className="text-gray-500 text-[16px] font-normal text-left px-[40px] mt-4 leading-loose">

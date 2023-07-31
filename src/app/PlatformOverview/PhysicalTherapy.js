@@ -1,13 +1,12 @@
 import Image from "next/image";
 import React from "react";
-import SolidButton from "../Components/SolidButton";
 import WhiteButton from "../Components/WhiteButton";
 
 function PhysicalTherapy() {
   return (
-    <div className="flex flex-wrap">
+    <div className="flex flex-wrap ">
       <div
-        className=" flex md:mt-8  h-[24rem] ml-[1rem] w-[250rem]"
+        className="md:flex mt-[16rem]  h-[10%] md:ml-[1rem]  w-[100%]"
         style={{ backgroundColor: "#b8a1c5" }}
       >
         <div className="flex flex-row  ">
@@ -32,7 +31,7 @@ function PhysicalTherapy() {
           </div>
         </div>
         <div
-          className=" text-black order-last  w-[60rem] mx-0"
+          className=" text-black order-last  w-[100%] mx-0"
           style={{ backgroundColor: "#b8a1c5" }}
         >
           <div className="pl-8 pr-[10rem]">
@@ -40,7 +39,7 @@ function PhysicalTherapy() {
               Virtual Physical Therapy
             </div>
             <div className="text-left pt-6">
-              <p className="w-[33rem] text-[1rem] font-normal  text-start leading-loose mx-6">
+              <p className="w-[100%] text-[1rem] font-normal  text-start leading-loose mx-6">
                 Embracing the power of technology, Azra Care introduces a
                 virtual physical therapy feature, enhanced by remote therapeutic
                 monitoring (RTM). Our platform enables real-time, personalized

@@ -4,7 +4,7 @@ import React from "react";
 
 function SolidButton() {
   return (
-    <div className="text-center text-white mt-[2rem] ml-[-20rem] regularfont">
+    <div className="text-center text-white mt-[4rem] ml-[-20rem] regularfont">
       <button
         className=" border  rounded-xl w-[10em] p-4 justify-between shadow-xl shadow-purple-200"
         style={{ backgroundColor: "#60426c" }}

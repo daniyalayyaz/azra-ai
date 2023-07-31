@@ -4,13 +4,13 @@ function ContactUs() {
   return (
     <>
       <div
-        className="flex flex-col mt-20 h-[800px]"
+        className="md:flex flex-col mt-20 "
         style={{ backgroundColor: "#d0eae1" }}
       >
-        <div className="grid grid-cols-2 text-left  h-full w-full  ">
-          <div className=" w-full px-4 px-6 px-0  mt-[4rem]">
+        <div className="md:grid grid-cols-2 text-left  h-full w-[100%] ">
+          <div className=" pt-[104px] pb-[104px]">
             <div className="mx-auto max-w-lg ">
-              <h1 className="text-2xl  sm:text-3xl font-semibold md:ml-6">
+              <h1 className="text-[2.5rem]  text-3xl semiboldfont ml-6">
                 Get in touch with us
               </h1>
             </div>
@@ -28,8 +28,8 @@ function ContactUs() {
                   <input
                     type="name"
                     name="full_name"
-                    className="w-full rounded-lg border p-3 pr-12 text-sm border-gray-300 shadow-sm"
-                    placeholder="First Name, Last Name"
+                    className="w-[100%] rounded-lg border p-3 pr-12 text-sm border-gray-300 shadow-sm"
+                    placeholder="e.g. Kelly Sullivan"
                   />
                 </div>
               </div>
@@ -42,8 +42,8 @@ function ContactUs() {
                   <input
                     type="name"
                     name="phone num"
-                    className="w-full rounded-lg border p-3 pr-12 text-sm border-gray-300 shadow-sm"
-                    placeholder="First Name, Last Name"
+                    className="w-[100%] rounded-lg border p-3 pr-12 text-sm border-gray-300 shadow-sm"
+                    placeholder="e.g. +1-912-345-6789"
                   />
                 </div>
               </div>
@@ -55,8 +55,8 @@ function ContactUs() {
                   <input
                     type="email"
                     name="email"
-                    className="w-full rounded-lg border p-3 pr-12 text-sm border-gray-300 shadow-sm"
-                    placeholder="Enter your email"
+                    className="w-[100%] rounded-lg border p-3 pr-12 text-sm border-gray-300 shadow-sm"
+                    placeholder="e.g. example@gmail.com"
                   />
                 </div>
               </div>
@@ -65,18 +65,18 @@ function ContactUs() {
                   Message
                 </label>
                 <textarea
-                  className="w-full rounded-lg border p-3 text-sm border-gray-300"
-                  placeholder="Please write your messages here"
+                  className="w-[100%] rounded-lg border p-3 text-sm border-gray-300"
                   rows="3"
                   id="message"
                   name="message"
                 ></textarea>
               </div>
 
-              <div className="flex items-center justify-center">
+              <div className="flex items-center justify-left">
                 <button
+                  style={{ backgroundColor: "#60426c" }}
                   type="submit"
-                  className="w-full inline-block rounded-full bg-black md:mt-4  py-3 text-sm font-medium text-white"
+                  className="w-[11rem] inline-block rounded-xl bg-black mt-4  py-3 mediumfont text-center text-white"
                 >
                   Send Message
                 </button>
@@ -84,17 +84,17 @@ function ContactUs() {
             </form>
           </div>
 
-          <div className=" w-[35rem] mt-[12rem]">
-            <div className="font-semibold">We respond within 24 hours</div>
-            <div className="font-[16px] mt-[2rem]">
+          <div className=" w-[75%] mt-[12rem] regularfont  ">
+            <h4 className="text-[1.5rem]">We respond within 24 hours</h4>
+            <div className="text-base mt-[1rem] leading-loose">
               Our tech-enabled care pathways support families, friends,
               caregivers, and community health workers to provide culturally
               sensitive care navigation, thereby improving quality scores,
               patient experience, and clinical and financial outcomes.
             </div>
-            <div className="font-semibold mt-[2rem]">
+            <h6 className="semiboldfont text-[1rem] mt-[2rem]">
               4.9 out of 5 stars from 47 reviews
-            </div>
+            </h6>
           </div>
         </div>
       </div>
