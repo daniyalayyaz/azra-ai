@@ -2,7 +2,10 @@
 import axios from "axios";
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
-import {preprocessResponse} from "./function"
+import { preprocessResponse } from "./function";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import SendLoading from "./SendLoading";
 
 const queriesData = [
   "Queries about our comprehensive program",
@@ -47,11 +50,15 @@ const AzraChat = () => {
     axios
       .post("https://azra-bot.herokuapp.com/asK_model", data)
       .then((response) => {
-        console.log(response.data.answer,"response")
+        console.log(response.data.answer, "response");
+        console.log(preprocessResponse(response.data.answer), "The replace");
         setSave([
           ...save,
           question,
-          { role: "assistant", content: preprocessResponse(response.data.answer) },
+          {
+            role: "assistant",
+            content: preprocessResponse(response.data.answer),
+          },
         ]);
         setQuestion({ role: "user", content: "", sources: [], images: [] });
         setLoading(false);
@@ -66,6 +73,12 @@ const AzraChat = () => {
         setQuestion({ role: "user", content: "", sources: [], images: [] });
         setLoading(false);
       });
+  };
+
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter") {
+      handleMessageSubmit(event);
+    }
   };
 
   return (
@@ -182,7 +195,10 @@ const AzraChat = () => {
         </div>
       </div>
 
-      <div style={{background:"#816179"}} className="flex-1 justify-center items-center">
+      <div
+        style={{ background: "#816179" }}
+        className="flex-1 justify-center items-center"
+      >
         <div className="container mx-auto">
           <div className="flex flex-col justify-center items-center mx-6 my-6 overflow-y-scroll  h-[38rem]">
             <div className="bg-gray-100 p-3 rounded-md shadow-md w-full">
@@ -209,16 +225,26 @@ const AzraChat = () => {
             <div className="chat-box">
               <div>
                 {save.map((ans) =>
-                  ans?.content?.split("\n").map((value,index) => (
+                  ans?.content?.split("\n").map((value, index) => (
                     <div
-                    key={index}
+                      key={index}
                       className={
                         ans.role === "user"
                           ? "flex justify-end items-end "
                           : "flex justify-start "
                       }
                     >
-                      {value?.length > 0 && <p className={ ans.role === "user" ? "max-w-[50%] bg-cyan-400 rounded-md p-3 my-6 shadow-md" : "bg-gray-100 rounded-md p-3 shadow-md max-w-[50%]"}>{value}</p>}
+                      {value?.length > 0 && (
+                        <p
+                          className={
+                            ans.role === "user"
+                              ? "max-w-[50%] bg-cyan-400 rounded-md p-3 my-6 shadow-md"
+                              : "bg-gray-100 rounded-md p-3 shadow-md max-w-[50%]"
+                          }
+                        >
+                          {value}
+                        </p>
+                      )}
                     </div>
                   ))
                 )}
@@ -226,20 +252,25 @@ const AzraChat = () => {
             </div>
           </div>
           {/* Make input field which have send button and this should be placed at end of main div */}
-          <div className="w-full flex mt-4 mx-auto">
+          <div className="w-[80%] flex mt-4 mx-auto">
             <input
               type="text"
               placeholder="Type your question here"
-              className="flex-1 bg-white border border-gray-300 rounded-md py-2 px-4 mr-2"
+              className="flex-1 bg-white border border-gray-300 rounded-md py-2 px-4 mr-2 focus:border-transparent focus:outline-none focus:ring-0"
               value={question?.content}
               onChange={handleQuestionChange}
+              onKeyDown={handleKeyDown} // Add the onKeyDown event handler
             />
             <button
               className="bg-blue-500 text-white rounded-md py-2 px-4"
               onClick={handleMessageSubmit}
               disabled={loading}
             >
-              {loading ? "Please wait, I am thinking..." : "Send"}
+              {loading ? (
+                <SendLoading />
+              ) : (
+                <FontAwesomeIcon icon={faPaperPlane} />
+              )}
             </button>
           </div>
         </div>
