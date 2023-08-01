@@ -2,11 +2,8 @@
 import axios from "axios";
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
-import { preprocessResponse } from "./function";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
-import SendLoading from "./SendLoading";
 
+// By Default Chatbot message listed items array
 const queriesData = [
   "Queries about our comprehensive program",
   "Questions about your recovery pathway and exercises",
@@ -50,14 +47,12 @@ const AzraChat = () => {
     axios
       .post("https://azra-bot.herokuapp.com/asK_model", data)
       .then((response) => {
-        console.log(response.data.answer, "response");
-        console.log(preprocessResponse(response.data.answer), "The replace");
         setSave([
           ...save,
           question,
           {
             role: "assistant",
-            content: preprocessResponse(response.data.answer),
+            content: response.data.answer,
           },
         ]);
         setQuestion({ role: "user", content: "", sources: [], images: [] });
@@ -163,7 +158,10 @@ const AzraChat = () => {
     //     </button>
     //   </div>
     // </div>
+
     <div className="flex flex-col md:flex-row h-screen">
+
+    {/* Dropdowns or Select fields available on left side */}
       <div className="w-full md:w-1/5 bg-gray-800 text-white flex flex-col justify-center items-center">
         <div className="flex flex-col justify-center items-center mb-4">
           <select
@@ -195,82 +193,164 @@ const AzraChat = () => {
         </div>
       </div>
 
-      <div
-        className="flex-1 justify-center items-center"
-      >
+      <div className="flex-1 justify-center items-center">
         <div className="container mx-auto">
-        <div className="flex flex-col mx-6 my-6 overflow-y-scroll md:h-[38rem]">
-            <div className="bg-gray-200 p-3 rounded-md shadow-md max-w-[50%]">
-              <p className="mb-2 mx-5 text-base">
-                Meet Azra Care - your companion built to support you through the
-                journey of orthopaedic surgical recovery.
-              </p>
-              <p className="mb-2 mx-5 text-base">
-                Consider me as your trusted ally, navigating the path to a
-                speedy and seamless orthopedic recovery alongside you. You can
-                ask me
-              </p>
-              <ul className="list-disc mx-20 ml-[8rem]">
-                {queriesData.map((query) => (
-                  <li className="text-gray-700 text-base" key={query}>
-                    {query}
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-2 mx-5 text-base">
-                My mission is to pave an easier path for your recovery journey.
-              </p>
-            </div>
-            <div className="chat-box">
-              <div>
-                {save.map((ans) =>
-                  ans?.content?.split("\n").map((value, index) => (
+          {/* Prompt Messages Container */}
+          <div className="flex h-[97vh] w-full flex-col">
+            {/* Prompt Messages */}
+            <div className="flex-1 space-y-6 overflow-y-auto rounded-xl bg-slate-200 p-4 text-sm leading-6 text-slate-900 shadow-sm dark:bg-slate-900 dark:text-slate-300 sm:text-base sm:leading-7">
+             
+              {/* By Default Message by Chatbot */}
+              <div className="flex items-start">
+                <img
+                  className="mr-2 h-8 w-8 rounded-full"
+                  src="https://dummyimage.com/128x128/363536/ffffff&text=J"
+                />
+                <div className="rounded-b-xl rounded-tr-xl bg-slate-50 p-4 dark:bg-slate-800 sm:max-w-md md:max-w-2xl">
+                  <p className="mb-2 mx-5 text-base">
+                    Meet Azra Care - your companion built to support you through
+                    the journey of orthopaedic surgical recovery.
+                  </p>
+                  <p className="mb-2 mx-5 text-base">
+                    Consider me as your trusted ally, navigating the path to a
+                    speedy and seamless orthopedic recovery alongside you. You
+                    can ask me
+                  </p>
+                  <ul className="list-disc mx-20 ml-[4rem]">
+                    {queriesData?.map((query) => (
+                      <li className="text-gray-700 text-base" key={query}>
+                        {query}
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="mt-2 mx-5 text-base">
+                    My mission is to pave an easier path for your recovery
+                    journey.
+                  </p>
+                </div>
+              </div>
+
+              {/* Chatbot response and user questions */}
+              {save?.map((ans) =>
+                ans?.content?.split("\n").map((value, index) =>
+                  ans.role !== "user" ? (
+                    // Response By Chatbot
+                    <div key={index} className="flex items-start">
+                      <img
+                        className="mr-2 h-8 w-8 rounded-full"
+                        src="https://dummyimage.com/128x128/363536/ffffff&text=J"
+                      />
+                      <div className="flex rounded-b-xl rounded-tr-xl bg-slate-50 p-4 dark:bg-slate-800 sm:max-w-md md:max-w-2xl">
+                        {value?.length > 0 && <p>{value}</p>}
+                      </div>
+
+                      {/* copy,like and dislike icons here */}
+                      <div className="mr-2 mt-1 flex flex-col-reverse gap-2 text-slate-500 sm:flex-row">
+                        <button className="hover:text-blue-600" type="button">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-5 w-5"
+                            viewBox="0 0 24 24"
+                            strokeWidth="2"
+                            stroke="currentColor"
+                            fill="none"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          >
+                            <path
+                              stroke="none"
+                              d="M0 0h24v24H0z"
+                              fill="none"
+                            ></path>
+                            <path d="M8 8m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z"></path>
+                            <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2"></path>
+                          </svg>
+                        </button>
+                        <button className="hover:text-blue-600" type="button">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-5 w-5"
+                            viewBox="0 0 24 24"
+                            strokeWidth="2"
+                            stroke="currentColor"
+                            fill="none"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          >
+                            <path
+                              stroke="none"
+                              d="M0 0h24v24H0z"
+                              fill="none"
+                            ></path>
+                            <path d="M7 13v-8a1 1 0 0 0 -1 -1h-2a1 1 0 0 0 -1 1v7a1 1 0 0 0 1 1h3a4 4 0 0 1 4 4v1a2 2 0 0 0 4 0v-5h3a2 2 0 0 0 2 -2l-1 -5a2 3 0 0 0 -2 -2h-7a3 3 0 0 0 -3 3"></path>
+                          </svg>
+                        </button>
+                        <button className="hover:text-blue-600">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-5 w-5"
+                            viewBox="0 0 24 24"
+                            strokeWidth="2"
+                            stroke="currentColor"
+                            fill="none"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          >
+                            <path
+                              stroke="none"
+                              d="M0 0h24v24H0z"
+                              fill="none"
+                            ></path>
+                            <path d="M7 11v8a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1v-7a1 1 0 0 1 1 -1h3a4 4 0 0 0 4 -4v-1a2 2 0 0 1 4 0v5h3a2 2 0 0 1 2 2l-1 5a2 3 0 0 1 -2 2h-7a3 3 0 0 1 -3 -3"></path>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  ) : (
+                    // Question By User
                     <div
                       key={index}
-                      className={
-                        ans.role === "user"
-                          ? "flex justify-end items-end "
-                          : "flex justify-start "
-                      }
+                      className="flex flex-row-reverse items-start"
                     >
-                      {value?.length > 0 && (
-                        <p
-                          className={
-                            ans.role === "user"
-                              ? "max-w-[50%] bg-cyan-400 rounded-md p-3 my-6 shadow-md"
-                              : "bg-gray-200 rounded-md p-3 shadow-md max-w-[50%]"
-                          }
-                        >
-                          {value}
-                        </p>
-                      )}
+                      <img
+                        className="ml-2 h-8 w-8 rounded-full"
+                        src="https://dummyimage.com/128x128/354ea1/ffffff&text=G"
+                      />
+
+                      <div className="flex min-h-[85px] rounded-b-xl rounded-tl-xl bg-slate-50 p-4 dark:bg-slate-800 sm:min-h-0 sm:max-w-md md:max-w-2xl">
+                        <p>{value?.length > 0 && value}</p>
+                      </div>
                     </div>
-                  ))
-                )}
-              </div>
-            </div>
-          </div>
-          {/* Make input field which have send button and this should be placed at end of main div */}
-          <div className="w-[80%] flex mt-4 mx-auto">
-            <input
-              type="text"
-              placeholder="Type your question here"
-              className="flex-1 bg-white border border-gray-300 rounded-md py-2 px-4 mr-2 focus:border-transparent focus:outline-none focus:ring-0"
-              value={question?.content}
-              onChange={handleQuestionChange}
-              onKeyDown={handleKeyDown} // Add the onKeyDown event handler
-            />
-            <button
-              className="bg-blue-500 text-white rounded-md py-2 px-4"
-              onClick={handleMessageSubmit}
-              disabled={loading}
-            >
-              {loading ? (
-                <SendLoading />
-              ) : (
-                <FontAwesomeIcon icon={faPaperPlane} />
+                  )
+                )
               )}
-            </button>
+            </div>
+
+            {/* Prompt message input */}
+            <form className="mt-2">
+              <label htmlFor="chat-input" className="sr-only">
+                Type your question here
+              </label>
+              <div className="relative">
+                <textarea
+                  id="chat-input"
+                  className="block w-full resize-none rounded-xl border-none bg-slate-200 p-4 pl-10 pr-20 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-600 dark:bg-slate-900 dark:text-slate-200 dark:placeholder-slate-400 dark:focus:ring-blue-600 sm:text-base"
+                  placeholder="Type your question here"
+                  rows="1"
+                  value={question?.content}
+                  onChange={handleQuestionChange}
+                  onKeyDown={handleKeyDown} // Add the onKeyDown event handler
+                  required
+                ></textarea>
+                <button
+                  type="submit"
+                  onClick={handleMessageSubmit}
+                  className="absolute bottom-2 right-2.5 rounded-lg bg-blue-700 px-4 py-2 text-sm font-medium text-slate-200 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 sm:text-base"
+                >
+                  Send <span className="sr-only">Send message</span>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
