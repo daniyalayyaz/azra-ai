@@ -4,15 +4,12 @@ import React from "react";
 
 function WhiteButton() {
   return (
-    <div
-      className="text-center  mt-[2rem] ml-[-30rem]"
-      style={{ color: "#60426c" }}
-    >
+    <div className=" mt-[2rem] ml-[2rem]" style={{ color: "#60426c" }}>
       <button
-        className=" border  rounded-xl w-[10em] p-4 justify-between shadow-xl"
+        className=" border  rounded-xl w-[10em] p-4 justify-left shadow-xl"
         style={{ backgroundColor: "white" }}
       >
-        <p className="ml-[-1.4rem] mediumfont">Learn More</p>
+        <p className="ml-[-1.4rem] mediumfont text-center ">Learn More</p>
         <FontAwesomeIcon
           className="ml-[7rem] mt-[-1.3rem]"
           icon={faArrowRight}

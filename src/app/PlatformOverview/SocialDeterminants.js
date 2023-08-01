@@ -3,6 +3,7 @@ import { faFaceSmile, faHeart } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import React from "react";
+import DeterminantsCard from "../Components/DeterminantsCard";
 
 function SocialDeterminants() {
   return (
@@ -11,15 +12,18 @@ function SocialDeterminants() {
         <div className="mx-auto container">
           <div className=" flex justify-center ">
             <div className="md:flex  space-y-2 justify-between  p-[3em] mt-[4rem]">
-              <div className="grid grid-cols gap-3  ml-12  w-[100%]  ">
-                <div className="">
+              <div className="md:grid grid-cols gap-3  ml-12  w-[100%]  ">
+                <div className="absolute">
                   <Image
-                    className=" rounded-[8px]  shadow-xl shadow-gray-400"
+                    className=" rounded-[8px]  shadow-2xl shadow-gray-500"
                     src={"/images/SDOH-icon.png"}
                     width={500}
                     height={200}
                     alt=""
                   />
+                  <div className="relative bottom-[8rem] left-[24rem]">
+                    <DeterminantsCard />
+                  </div>
                 </div>
               </div>
               <div className="text-black  order-last  py-4  md:w-2/5 mr-[2rem]">

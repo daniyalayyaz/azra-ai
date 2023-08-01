@@ -2,11 +2,11 @@ import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
-function QuoteCard() {
+function ChatbotCard() {
   return (
     <div className="container ">
       <span
-        className="flex flex-row flex-start border rounded-xl w-[24.4rem] p-8 "
+        className="flex flex-row flex-start border-2 rounded-xl w-[24.4rem] p-8 "
         style={{ backgroundColor: "#d0eae1", border: "#d0eae1" }}
       >
         <FontAwesomeIcon
@@ -25,4 +25,4 @@ function QuoteCard() {
   );
 }
 
-export default QuoteCard;
+export default ChatbotCard;

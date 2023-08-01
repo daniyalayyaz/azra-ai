@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import React from "react";
-import QuoteCard from "../Components/QuoteCard";
 import SolidButton from "@/app/Components/SolidButton";
 import {
   faCommentSms,
@@ -13,10 +12,10 @@ const ChatBotCard = () => {
   return (
     <div className="mx-auto container">
       <div
-        className=" bg-no-repeat bg-cover bg-right"
+        className=" bg-no-repeat bg-cover bg-left"
         style={{ backgroundImage: `url("/images/chatbot-bg.png")` }}
       >
-        <div className=" flex justify-center  ">
+        <div className=" flex justify-center mx-[6rem] ">
           <div className="md:flex   justify-between  p-[3em]   ">
             <div className="text-black w-[31.1rem] order-first mr-[12rem] mt-[46rem] ">
               <span>
@@ -70,7 +69,7 @@ const ChatBotCard = () => {
               </div>
             </div>
             <div className="grid grid-cols w-[30rem] ml-[8rem]  mr-[-6rem] mt-[40rem]">
-              <div className="">
+              <div>
                 <Image
                   className="h-[46rem]  shadow-lg  inline-block  shadow-gray-500 rounded-t-[2rem] rounded-r-[2rem]"
                   src={"/images/chatbot.png"}

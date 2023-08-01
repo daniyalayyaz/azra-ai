@@ -15,7 +15,7 @@ function MainPage() {
       >
         <div className="mx-auto container">
           <Navbar />
-          <div className="md:w-[75%] md:mt-[6rem] md:ml-[10rem] md:mt-2 md:ml-2">
+          <div className="md:w-[75%] md:mt-[6rem] md:mx-[6rem]">
             <h1
               className="text-white boldfont text-[4rem]"
               style={{ fontFamily: "sans-serif" }}
