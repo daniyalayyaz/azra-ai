@@ -10,7 +10,7 @@ function Footer() {
   return (
     <>
       <footer className="bg-white pb-4" style={{ backgroundColor: "#d0eae1" }}>
-        <div className="pt-4 sm:pt-10 lg:pt-12 pb-12 md:px-16 px-6 text-center md:text-left">
+        <div className="pt-4 sm:pt-10 lg:pt-12 pb-12 md:px-16 px-6  text-left">
           <div className="max-w-screen-3xl px-4 mx-auto ">
             <div className=" md:flex  mt-6">
               <div className="border w-[100%] border-black mb-2"></div>
@@ -55,7 +55,7 @@ function Footer() {
                     value-based care. Collaborate with us on research, digital
                     health platform development, and more!
                   </p>
-                  <div className="flex flex-row p-4 gap-4">
+                  <div className="flex flex-row p-4 gap-4 justify-start">
                     <div
                       className="border-8 rounded-full"
                       style={{

@@ -75,7 +75,7 @@ function ContactUs() {
                   </div>
                 </div>
 
-                <div className="flex items-center md:justify-left justify-center">
+                <div className="relative">
                   <button
                     style={{ backgroundColor: "#60426c" }}
                     type="submit"
@@ -87,7 +87,7 @@ function ContactUs() {
               </form>
             </div>
 
-            <div className=" md:w-[75%] mt-[12rem] regularfont  ">
+            <div className=" md:w-[75%] md:mt-[12rem] regularfont  ">
               <h4 className="text-[1.5rem]">We respond within 24 hours</h4>
               <div className="text-base mt-[1rem] leading-loose">
                 Our tech-enabled care pathways support families, friends,

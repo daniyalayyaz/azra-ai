@@ -27,13 +27,13 @@ const ChatBotCard = () => {
               />
             </span>
             <div
-              className={` md:w-[82%] text-[2rem] text-start semiboldfont md:text-left text-center  mt-[2rem]`}
+              className={` md:w-[82%] w-[100%] md:text-[2rem] text-[1rem] text-start semiboldfont md:text-left text-center  mt-[2rem]`}
             >
               AI-Powered Conversational Care Concierge Engages Patients By Text
               Messages With Embedded Education Media and Content
             </div>
             <div className=" pt-4 ">
-              <p className=" md:w-[90%] text-gray-500 text-[1rem] regularfont text-start text-center md:text-left leading-loose">
+              <p className=" md:w-[90%] w-[100%] text-gray-500 text-[1rem] regularfont text-start text-center md:text-left leading-loose">
                 Azra helps you support your patients in preparing for a seamless
                 care journey experience, without extra work added to you or your
                 staff. Deliver accessible, actionable and always-on
