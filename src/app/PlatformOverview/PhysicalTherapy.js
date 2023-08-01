@@ -35,7 +35,7 @@ function PhysicalTherapy() {
             className=" text-black order-last  w-[60%] "
             style={{ backgroundColor: "#b8a1c5" }}
           >
-            <div className="md:w-[70%]">
+            <div className="md:w-[70%] mx-2">
               <div className={`text-[2rem] text-start semiboldfont `}>
                 Virtual Physical Therapy
               </div>

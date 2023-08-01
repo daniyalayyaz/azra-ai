@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Navbar = () => (
-  <header className="bg-transparent border-white-200 mx-[6rem]">
+  <header className="bg-transparent border-white-200 md:mx-[6rem] mx-2">
     <div className="container mx-auto">
       <div className=" flex items-center justify-between py-[50px] ">
         <Link href="/">

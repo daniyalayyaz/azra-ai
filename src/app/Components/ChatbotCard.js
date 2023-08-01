@@ -6,11 +6,11 @@ function ChatbotCard() {
   return (
     <div className="container ">
       <span
-        className="flex flex-row flex-start border-2 rounded-xl w-[24.4rem] p-8 "
+        className="flex flex-row flex-start border-2 rounded-xl w-[100%] p-8 shadow-2xl shadow-blue-300"
         style={{ backgroundColor: "#d0eae1", border: "#d0eae1" }}
       >
         <FontAwesomeIcon
-          className="border-4 rounded-full   mr-[1rem] text-left "
+          className="border-4 rounded-full mr-[1rem] text-left "
           icon={faQuoteLeft}
           style={{ color: "#60426c", backgroundColor: "white" }}
           width={150}

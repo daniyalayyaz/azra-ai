@@ -10,9 +10,9 @@ function SocialDeterminants() {
     <>
       <div className="bg-white  ">
         <div className="mx-auto container">
-          <div className="md:flex space-y-2 justify-between  p-[3em] mt-[4rem]">
-            <div className="grid grid-cols gap-3  md:ml-12  md:w-[100%]  ">
-              <div className="absolute">
+          <div className="flex md:flex-row flex-col space-y-2 md:justify-between  mt-[4rem]">
+            <div className="grid grid-cols gap-3  md:ml-12  md:w-[100%] mx-2 ">
+              <div className="md:absolute">
                 <Image
                   className=" rounded-[8px]  shadow-2xl shadow-gray-500"
                   src={"/images/SDOH-icon.png"}
@@ -25,9 +25,9 @@ function SocialDeterminants() {
                 </div>
               </div>
             </div>
-            <div className="text-black  order-last  py-4  md:w-2/5 mr-[2rem]">
+            <div className="text-black  py-4  md:w-2/5 mr-[2rem] mx-2">
               <div
-                className={`text-[2rem]  text-start semiboldfont  w-[100%] text-left`}
+                className={`text-[2rem]  text-start semiboldfont  w-[100%] md:text-left`}
               >
                 Social Determinants of Health and Health-Related Social Needs
               </div>
@@ -38,19 +38,19 @@ function SocialDeterminants() {
                   your patient population and also streamlining resources like
                   transportation, food, and housing for those who need it most.
                 </p>
-                <div className="md:flex flex-row flex-start mt-[2rem] semiboldfont p-2">
+                <div className="md:flex flex-row flex-start mt-[2rem] semiboldfont md:p-2">
                   <span className=" flex flex-row ">
                     <FontAwesomeIcon
-                      className="mx-[2rem]"
+                      className="md:mx-[2rem] mr-4"
                       icon={faFaceSmile}
                       style={{ color: "#60426c" }}
                       width={30}
                     />
                     Prioritizing Patient Satisfaction
                   </span>
-                  <span className="flex flex-row w-[24rem]">
+                  <span className="flex flex-row md:w-[24rem]">
                     <FontAwesomeIcon
-                      className="mx-[2rem]"
+                      className="md:mx-[2rem] mr-4"
                       icon={faHeart}
                       style={{ color: "#60426c" }}
                       width={30}

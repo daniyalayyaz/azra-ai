@@ -4,7 +4,7 @@ import React from "react";
 function AnalyticsCard() {
   return (
     <div className="mx-auto container">
-      <div className="text-center  mt-[8rem] md:mr-[2rem] mx-2">
+      <div className="text-center  mt-[8rem] md:mr-[2rem] md:ml-[4rem] mx-2">
         <div className=" grid md:grid-cols-2 gap-8  place-items-center ">
           <div className=" rounded-xl border-2 ">
             <div className="md:w-[36rem] md:h-[35rem]">

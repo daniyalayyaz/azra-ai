@@ -8,9 +8,9 @@ import Footer from "../Components/Footer";
 import ContactUs from "./ContactUs";
 function MainPage() {
   return (
-    <div className="bg-white">
+    <div className="bg-white ">
       <div
-        className="bg-cover bg-center h-[100%] md:h-[80%] w-[100%] absolute bg-fixed rounded-br-[120px]"
+        className="bg-cover bg-center h-[100%] md:h-[80%] w-[100%]  bg-fixed rounded-br-[120px] py-2"
         style={{ backgroundImage: `url("/images/bg.png")` }}
       >
         <div className="mx-auto container">
@@ -45,7 +45,7 @@ function MainPage() {
       <SocialDeterminants />
       <PhysicalTherapy />
       <div className="mx-auto container">
-        <div className="md:flex flex-row gap-2 md:ml-[22rem] md:mt-[8rem]">
+        <div className="md:flex flex-row gap-2  md:mt-[8rem]">
           <AnalyticsCard />
           <OrthopedicCard />
         </div>

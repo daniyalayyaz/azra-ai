@@ -97,7 +97,7 @@ function Footer() {
             <div className="border w-[100%] border-black mb-2"></div>
           </div>
           <div className="max-w-screen-2xl px-4 md:px-8 mx-auto text-base ">
-            <div className="flex flex -row justify-between items-center gap-4 ">
+            <div className="flex flex -row justify-between items-center gap-4">
               <span className="text-black ">
                 <span className=" mr-1.5"> Copyright &copy;</span>| 2023 Azra
                 Care | All rights reserved.

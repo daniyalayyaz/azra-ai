@@ -6,7 +6,7 @@ function DeterminantsCard() {
   return (
     <div className="container ">
       <span
-        className="flex flex-row flex-start border-2 rounded-xl md:w-[26%] p-8 "
+        className="flex flex-row flex-start border-2 rounded-xl md:w-[26%] p-8 shadow-2xl shadow-blue-300"
         style={{ backgroundColor: "#d0eae1", border: "#d0eae1" }}
       >
         <FontAwesomeIcon
