@@ -44,9 +44,11 @@ function MainPage() {
       <ChatBotCard />
       <SocialDeterminants />
       <PhysicalTherapy />
-      <div className="md:flex flex-row gap-2 md:ml-[22rem] md:mt-[8rem]">
-        <AnalyticsCard />
-        <OrthopedicCard />
+      <div className="mx-auto container">
+        <div className="md:flex flex-row gap-2 md:ml-[22rem] md:mt-[8rem]">
+          <AnalyticsCard />
+          <OrthopedicCard />
+        </div>
       </div>
       <ContactUs />
       <Footer />

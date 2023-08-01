@@ -10,59 +10,56 @@ function SocialDeterminants() {
     <>
       <div className="bg-white  ">
         <div className="mx-auto container">
-          <div className=" flex justify-center ">
-            <div className="md:flex  space-y-2 justify-between  p-[3em] mt-[4rem]">
-              <div className="md:grid grid-cols gap-3  ml-12  w-[100%]  ">
-                <div className="absolute">
-                  <Image
-                    className=" rounded-[8px]  shadow-2xl shadow-gray-500"
-                    src={"/images/SDOH-icon.png"}
-                    width={500}
-                    height={200}
-                    alt=""
-                  />
-                  <div className="relative bottom-[8rem] left-[24rem]">
-                    <DeterminantsCard />
-                  </div>
+          <div className="md:flex space-y-2 justify-between  p-[3em] mt-[4rem]">
+            <div className="grid grid-cols gap-3  md:ml-12  md:w-[100%]  ">
+              <div className="absolute">
+                <Image
+                  className=" rounded-[8px]  shadow-2xl shadow-gray-500"
+                  src={"/images/SDOH-icon.png"}
+                  width={500}
+                  height={200}
+                  alt=""
+                />
+                <div className="md:relative bottom-[8rem] left-[24rem]">
+                  <DeterminantsCard />
                 </div>
               </div>
-              <div className="text-black  order-last  py-4  md:w-2/5 mr-[2rem]">
-                <div
-                  className={`text-[2rem]  text-start semiboldfont  w-[100%] text-left`}
-                >
-                  Social Determinants of Health and Health-Related Social Needs
-                </div>
-                <div className=" text-left pt-4 text-[1rem]">
-                  <p className="w-[80%] text-gray-500  regularfont leading-loose text-start ">
-                    Azra Care implements systematic screening for health-related
-                    social needs, enabling an accurate depiction of social risk
-                    in your patient population and also streamlining resources
-                    like transportation, food, and housing for those who need it
-                    most.
-                  </p>
-                  <div className="md:flex flex-row flex-start mt-[2rem] semiboldfont p-2">
-                    <span className=" flex flex-row ">
-                      <FontAwesomeIcon
-                        className="mx-[2rem]"
-                        icon={faFaceSmile}
-                        style={{ color: "#60426c" }}
-                        width={30}
-                      />
-                      Prioritizing Patient Satisfaction
-                    </span>
-                    <span className="flex flex-row w-[24rem]">
-                      <FontAwesomeIcon
-                        className="mx-[2rem]"
-                        icon={faHeart}
-                        style={{ color: "#60426c" }}
-                        width={30}
-                      />
-                      Striving for Equitable Care
-                    </span>
-                  </div>
-                </div>
-                <SolidButton />
+            </div>
+            <div className="text-black  order-last  py-4  md:w-2/5 mr-[2rem]">
+              <div
+                className={`text-[2rem]  text-start semiboldfont  w-[100%] text-left`}
+              >
+                Social Determinants of Health and Health-Related Social Needs
               </div>
+              <div className=" text-left pt-4 text-[1rem]">
+                <p className="w-[80%] text-gray-500  regularfont leading-loose text-start ">
+                  Azra Care implements systematic screening for health-related
+                  social needs, enabling an accurate depiction of social risk in
+                  your patient population and also streamlining resources like
+                  transportation, food, and housing for those who need it most.
+                </p>
+                <div className="md:flex flex-row flex-start mt-[2rem] semiboldfont p-2">
+                  <span className=" flex flex-row ">
+                    <FontAwesomeIcon
+                      className="mx-[2rem]"
+                      icon={faFaceSmile}
+                      style={{ color: "#60426c" }}
+                      width={30}
+                    />
+                    Prioritizing Patient Satisfaction
+                  </span>
+                  <span className="flex flex-row w-[24rem]">
+                    <FontAwesomeIcon
+                      className="mx-[2rem]"
+                      icon={faHeart}
+                      style={{ color: "#60426c" }}
+                      width={30}
+                    />
+                    Striving for Equitable Care
+                  </span>
+                </div>
+              </div>
+              <SolidButton />
             </div>
           </div>
         </div>

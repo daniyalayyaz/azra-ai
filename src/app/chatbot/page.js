@@ -1,6 +1,7 @@
 "use client";
 import axios from "axios";
 import React, { useState } from "react";
+import { preprocessResponse } from "./function";
 import ReactDOM from "react-dom";
 
 // By Default Chatbot message listed items array
@@ -52,7 +53,7 @@ const AzraChat = () => {
           question,
           {
             role: "assistant",
-            content: response.data.answer,
+            content: preprocessResponse(response.data.answer),
           },
         ]);
         setQuestion({ role: "user", content: "", sources: [], images: [] });
@@ -160,8 +161,7 @@ const AzraChat = () => {
     // </div>
 
     <div className="flex flex-col md:flex-row h-screen">
-
-    {/* Dropdowns or Select fields available on left side */}
+      {/* Dropdowns or Select fields available on left side */}
       <div className="w-full md:w-1/5 bg-gray-800 text-white flex flex-col justify-center items-center">
         <div className="flex flex-col justify-center items-center mb-4">
           <select
@@ -199,7 +199,6 @@ const AzraChat = () => {
           <div className="flex h-[97vh] w-full flex-col">
             {/* Prompt Messages */}
             <div className="flex-1 space-y-6 overflow-y-auto rounded-xl bg-slate-200 p-4 text-sm leading-6 text-slate-900 shadow-sm dark:bg-slate-900 dark:text-slate-300 sm:text-base sm:leading-7">
-             
               {/* By Default Message by Chatbot */}
               <div className="flex items-start">
                 <img
@@ -327,7 +326,7 @@ const AzraChat = () => {
             </div>
 
             {/* Prompt message input */}
-            <form className="mt-2">
+            <form className="mt-2 mx-auto w-[80%]">
               <label htmlFor="chat-input" className="sr-only">
                 Type your question here
               </label>

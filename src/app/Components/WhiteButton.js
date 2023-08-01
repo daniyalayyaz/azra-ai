@@ -4,7 +4,7 @@ import React from "react";
 
 function WhiteButton() {
   return (
-    <div className=" mt-[2rem] ml-[2rem]" style={{ color: "#60426c" }}>
+    <div className=" mt-[2rem] " style={{ color: "#60426c" }}>
       <button
         className=" border  rounded-xl w-[10em] p-4 justify-left shadow-xl"
         style={{ backgroundColor: "white" }}
