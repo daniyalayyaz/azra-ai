@@ -45,7 +45,7 @@ function MainPage() {
       <SocialDeterminants />
       <PhysicalTherapy />
       <div className="mx-auto container">
-        <div className="md:flex flex-row gap-2  md:mt-[8rem]">
+        <div className="md:flex flex-row md:mt-[8rem]  ">
           <AnalyticsCard />
           <OrthopedicCard />
         </div>

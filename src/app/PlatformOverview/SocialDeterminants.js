@@ -11,8 +11,8 @@ function SocialDeterminants() {
       <div className="bg-white  ">
         <div className="mx-auto container">
           <div className="flex md:flex-row flex-col space-y-2 md:justify-between  mt-[4rem]">
-            <div className="grid grid-cols gap-3  md:ml-12  md:w-[100%] mx-2 ">
-              <div className="md:absolute">
+            <div className="grid grid-cols  place-content-center  md:w-[100%] mx-2 ">
+              <div className="md:relative">
                 <Image
                   className=" rounded-[8px]  shadow-2xl shadow-gray-500"
                   src={"/images/SDOH-icon.png"}
@@ -20,18 +20,18 @@ function SocialDeterminants() {
                   height={200}
                   alt=""
                 />
-                <div className="md:relative bottom-[8rem] left-[24rem]">
+                <div className="md:absolute top-[21rem] w-[100%] left-[22rem] ">
                   <DeterminantsCard />
                 </div>
               </div>
             </div>
             <div className="text-black  py-4  md:w-2/5 mr-[2rem] mx-2">
               <div
-                className={`text-[2rem]  text-start semiboldfont  w-[100%] md:text-left`}
+                className={`text-[2rem]  text-start semiboldfont  w-[85%] md:text-left`}
               >
                 Social Determinants of Health and Health-Related Social Needs
               </div>
-              <div className=" text-left pt-4 text-[1rem]">
+              <div className=" md:text-left text-center pt-4 text-[1rem]">
                 <p className="w-[80%] text-gray-500  regularfont leading-loose text-start ">
                   Azra Care implements systematic screening for health-related
                   social needs, enabling an accurate depiction of social risk in

@@ -6,7 +6,7 @@ function DeterminantsCard() {
   return (
     <div className="container ">
       <span
-        className="flex flex-row flex-start border-2 rounded-xl md:w-[26%] p-8 shadow-2xl shadow-blue-300"
+        className="flex flex-row flex-start border-2 rounded-xl md:w-[70%] p-8 shadow-2xl shadow-blue-300"
         style={{ backgroundColor: "#d0eae1", border: "#d0eae1" }}
       >
         <FontAwesomeIcon
@@ -16,7 +16,7 @@ function DeterminantsCard() {
           width={150}
           height={40}
         />
-        <p className=" text-gray">
+        <p className=" text-gray ">
           Azra Care programs include holistic approaches to osteoporosis,
           pre-operative optimization for total hip and total knee arthroplasty,
           and population health approaches to care

@@ -16,7 +16,7 @@ const ChatBotCard = () => {
         className=" bg-no-repeat bg-cover bg-left mx-[2rem]"
         style={{ backgroundImage: `url("/images/chatbot-bg.png")` }}
       > */}
-      <div className=" flex justify-center md:mx-[6rem] mt-[8rem] px-[4rem]">
+      <div className=" flex justify-center md:mx-[6rem] mt-[8rem] md:px-[4rem]">
         <div className="md:flex  space-y-8 justify-between ">
           <div className="text-black  order-first md:mr-[12rem]  mt-[7rem]">
             <span>

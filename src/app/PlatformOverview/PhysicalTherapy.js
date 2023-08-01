@@ -5,7 +5,7 @@ import WhiteButton from "../Components/WhiteButton";
 function PhysicalTherapy() {
   return (
     <div className="flex flex-wrap ">
-      <div className="ml-auto container">
+      <div className="mx-auto container">
         <div
           className="md:flex mt-[16rem]  md:h-[24rem]   w-[100%] "
           style={{ backgroundColor: "#b8a1c5" }}
@@ -15,27 +15,27 @@ function PhysicalTherapy() {
               <Image
                 className="rounded-xl h-[29rem] md:w-[100%] mt-[-4rem] "
                 src={"/images/therapy1.jpg"}
-                width={400}
+                width={200}
                 height={800}
                 alt=""
               />
             </div>
 
-            <div className="flex flex-wrap ml-[-4rem]">
+            <div className="flex flex-wrap md:ml-[-4rem]">
               <Image
                 className="rounded-xl h-[27rem] md:w-[66%]"
                 src={"/images/exercise.jpg"}
-                width={400}
+                width={200}
                 height={800}
                 alt=""
               />
             </div>
           </div>
           <div
-            className=" text-black order-last  w-[60%] "
+            className=" text-black  w-[70%] "
             style={{ backgroundColor: "#b8a1c5" }}
           >
-            <div className="md:w-[70%] mx-2">
+            <div className="md:w-[70%] ">
               <div className={`text-[2rem] text-start semiboldfont `}>
                 Virtual Physical Therapy
               </div>
