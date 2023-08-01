@@ -15,15 +15,15 @@ function MainPage() {
       >
         <div className="mx-auto container">
           <Navbar />
-          <div className="md:w-[75%] md:mt-[6rem] md:mx-[6rem]">
+          <div className="md:w-[75%] md:mt-[6rem] md:mx-[6rem] px-4">
             <h1
-              className="text-white boldfont text-[4rem]"
+              className="text-white boldfont md:text-[4rem] text-[2.5rem] ml-6"
               style={{ fontFamily: "sans-serif" }}
             >
               The Azra Care Platform
             </h1>
             <p
-              className="text-white mt-[2rem] mediumfont mb-[4rem]"
+              className="text-white mt-[2rem] mediumfont text-left mb-[4rem] ml-6"
               style={{ color: "#DEE1F8" }}
             >
               Azra Care's platform is a pioneering digital health solution that
@@ -45,7 +45,7 @@ function MainPage() {
       <SocialDeterminants />
       <PhysicalTherapy />
       <div className="mx-auto container">
-        <div className="md:flex flex-row md:mt-[8rem]  ">
+        <div className="md:flex flex-row md:mt-[8rem]  px-6">
           <AnalyticsCard />
           <OrthopedicCard />
         </div>

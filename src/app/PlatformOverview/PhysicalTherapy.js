@@ -7,7 +7,7 @@ function PhysicalTherapy() {
     <div className="flex flex-wrap ">
       <div className="mx-auto container">
         <div
-          className="md:flex mt-[16rem]  md:h-[24rem]   w-[100%] "
+          className="md:flex mt-[16rem]  md:h-[24rem]   w-[100%] px-6"
           style={{ backgroundColor: "#b8a1c5" }}
         >
           <div className="flex flex-row  ">
@@ -32,14 +32,14 @@ function PhysicalTherapy() {
             </div>
           </div>
           <div
-            className=" text-black  w-[70%] "
+            className=" text-black  md:w-[70%]"
             style={{ backgroundColor: "#b8a1c5" }}
           >
-            <div className="md:w-[70%] ">
+            <div className="md:w-[70%] w-[100%]  ">
               <div className={`text-[2rem] text-start semiboldfont `}>
                 Virtual Physical Therapy
               </div>
-              <div className="text-left pt-6">
+              <div className="text-left pt-6 ">
                 <p className=" text-[1rem] font-normal  text-start leading-loose ">
                   Embracing the power of technology, Azra Care introduces a
                   virtual physical therapy feature, enhanced by remote

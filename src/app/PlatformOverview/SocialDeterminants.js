@@ -10,8 +10,8 @@ function SocialDeterminants() {
     <>
       <div className="bg-white  ">
         <div className="mx-auto container">
-          <div className="flex md:flex-row flex-col space-y-2 md:justify-between  mt-[4rem]">
-            <div className="grid grid-cols  place-content-center  md:w-[100%] mx-2 ">
+          <div className="flex md:flex-row flex-col space-y-2 md:justify-between md:mx-[4rem] mt-[4rem] px-6">
+            <div className="grid grid-cols  md:w-[100%]  ">
               <div className="md:relative">
                 <Image
                   className=" rounded-[8px]  shadow-2xl shadow-gray-500"

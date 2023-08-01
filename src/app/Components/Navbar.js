@@ -2,18 +2,19 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Navbar = () => (
-  <header className="bg-transparent border-white-200 md:mx-[6rem] mx-2">
+  <header className="bg-transparent border-white-200 md:mx-[6rem] px-4">
     <div className="container mx-auto">
       <div className=" flex items-center justify-between py-[50px] ">
-        <Link href="/">
-          <Image
-            src={"/images/logo.png"}
-            width={194}
-            height={32}
-            alt=""
-          ></Image>
-        </Link>
-
+        <div className="w-[30%] md:w-[70%]">
+          <Link href="/">
+            <Image
+              src={"/images/logo.png"}
+              width={194}
+              height={32}
+              alt=""
+            ></Image>
+          </Link>
+        </div>
         <nav>
           <ul className="flex items-center space-x-8 pt-[13px] pb-[20px] text-white semiboldfont">
             <li>

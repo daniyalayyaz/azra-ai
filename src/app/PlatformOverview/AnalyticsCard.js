@@ -16,10 +16,10 @@ function AnalyticsCard() {
                 alt=""
               />
               <div className="border-2 rounded-lg"></div>
-              <p className=" text-left text-[1.5rem] semiboldfont mb-2 mt-5 px-[40px]">
+              <p className=" md:text-left text-center text-[1.5rem] semiboldfont mb-2 mt-5 md:px-[40px] px-4">
                 Advanced Analytics to Bolster Value Based Care
               </p>
-              <p className="text-gray-500 text-[16px] font-normal text-left px-[40px] mt-4 leading-loose">
+              <p className="text-gray-500 text-[16px] font-normal md:text-left text-center md:px-[40px] mt-4 px-4 leading-loose">
                 We leverage advanced analytics to enhance value-based care. By
                 harnessing data-driven insights, we're able to improve patient
                 outcomes, synchronize care coordination, and optimize healthcare

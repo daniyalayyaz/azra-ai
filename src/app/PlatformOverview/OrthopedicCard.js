@@ -15,10 +15,10 @@ function OrthopedicCard() {
                 width={700}
                 alt=""
               />
-              <p className=" text-left text-[1.5rem] semiboldfont mb-2 mt-5 px-[40px]">
+              <p className=" md:text-left text-center text-[1.5rem] semiboldfont mb-2 mt-5 md:px-[40px] px-4">
                 Care Models for Orthopaedic and Musculoskeletal Care
               </p>
-              <p className="text-gray-500 text-[16px] font-normal text-left px-[40px] mt-4 leading-loose">
+              <p className="text-gray-500 text-[16px] font-normal md:text-left text-center md:px-[40px] mt-4 px-4 leading-loose">
                 Azra Care emphasizes care models for orthopaedic surgeons for
                 conditions like knee and hip osteoarthritis, osteoporosis, and
                 fracture care.

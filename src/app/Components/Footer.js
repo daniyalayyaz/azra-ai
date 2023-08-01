@@ -10,7 +10,7 @@ function Footer() {
   return (
     <>
       <footer className="bg-white pb-4" style={{ backgroundColor: "#d0eae1" }}>
-        <div className="pt-4 sm:pt-10 lg:pt-12 pb-12 md:px-16 ">
+        <div className="pt-4 sm:pt-10 lg:pt-12 pb-12 md:px-16 px-6 text-center md:text-left">
           <div className="max-w-screen-3xl px-4 mx-auto ">
             <div className=" md:flex  mt-6">
               <div className="border w-[100%] border-black mb-2"></div>
@@ -19,13 +19,14 @@ function Footer() {
             <div className="mx-auto container">
               <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4  pt-10 lg:pt-20">
                 <div className="lg:-mt-2 mb-4">
-                  <Image
-                    src={"/images/logo2.png"}
-                    alt=""
-                    width={194}
-                    height={32}
-                  />
-
+                  <div className="w-[30%] md:w-[70%]">
+                    <Image
+                      src={"/images/logo2.png"}
+                      alt=""
+                      width={194}
+                      height={32}
+                    />
+                  </div>
                   <p className="text-gray-600  text-[16px] font-normal mt-6 leading-loose">
                     Azra empowers specialty providers to transition to
                     value-based care to enable personalized, convenient,

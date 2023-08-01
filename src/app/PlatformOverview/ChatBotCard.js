@@ -16,8 +16,8 @@ const ChatBotCard = () => {
         className=" bg-no-repeat bg-cover bg-left mx-[2rem]"
         style={{ backgroundImage: `url("/images/chatbot-bg.png")` }}
       > */}
-      <div className=" flex justify-center md:mx-[6rem] mt-[8rem] md:px-[4rem]">
-        <div className="md:flex  space-y-8 justify-between ">
+      <div className=" flex justify-center md:mx-[6rem] md:mt-[8rem] md:px-[4rem] px-6">
+        <div className="md:flex  md:space-y-8 justify-between ">
           <div className="text-black  order-first md:mr-[12rem]  mt-[7rem]">
             <span>
               <FontAwesomeIcon
@@ -27,13 +27,13 @@ const ChatBotCard = () => {
               />
             </span>
             <div
-              className={` md:w-[82%] text-[2rem] text-start semiboldfont text-left  mt-[2rem]`}
+              className={` md:w-[82%] text-[2rem] text-start semiboldfont md:text-left text-center  mt-[2rem]`}
             >
               AI-Powered Conversational Care Concierge Engages Patients By Text
               Messages With Embedded Education Media and Content
             </div>
             <div className=" pt-4 ">
-              <p className=" md:w-[90%] text-gray-500 text-[1rem] regularfont text-start text-left leading-loose">
+              <p className=" md:w-[90%] text-gray-500 text-[1rem] regularfont text-start text-center md:text-left leading-loose">
                 Azra helps you support your patients in preparing for a seamless
                 care journey experience, without extra work added to you or your
                 staff. Deliver accessible, actionable and always-on
@@ -69,7 +69,7 @@ const ChatBotCard = () => {
               <SolidButton />
             </div>
           </div>
-          <div className="md:grid grid-cols w-[100%] md:mr-[2rem]  md:mr-[-6rem] mt-[40rem] ">
+          <div className="md:grid grid-cols w-[100%] md:mr-[2rem]  md:mr-[-6rem] md:mt-[40rem] mt-[6rem]">
             <div>
               <Image
                 className="md:h-[46rem]  shadow-lg  inline-block  shadow-gray-500 rounded-t-[2rem] rounded-r-[2rem]"
