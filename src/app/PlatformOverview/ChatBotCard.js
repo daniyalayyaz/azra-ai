@@ -19,7 +19,7 @@ const ChatBotCard = () => {
       <div className=" flex justify-center md:mx-[6rem] md:mt-[8rem] md:px-[4rem] px-6">
         <div className="md:flex  md:space-y-8 justify-between ">
           <div className="text-black  order-first md:mr-[12rem]  mt-[7rem]">
-            <span>
+            <span className="fadeIn1">
               <FontAwesomeIcon
                 icon={faRobot}
                 style={{ color: "#60426c", width: "40px", height: "30px" }}
@@ -28,12 +28,12 @@ const ChatBotCard = () => {
             </span>
 
             <div
-              className={` md:w-[82%] w-[100%] md:text-[2rem] text-[1rem] text-start semiboldfont md:text-left text-center  mt-[2rem]`}
+              className={` md:w-[82%] w-[100%] md:text-[2rem] text-[1rem] text-start semiboldfont md:text-left text-center  mt-[2rem]`} data-aos="fade-in"
             >
               AI-Powered Conversational Care Concierge Engages Patients By Text
               Messages With Embedded Education Media and Content
             </div>
-            <div className=" pt-4 ">
+            <div className=" pt-4" data-aos="fade-in" data-aos-delay="200">
               <p className=" md:w-[90%] w-[100%] text-gray-500 text-[1rem] regularfont text-start text-center md:text-left leading-loose">
                 Azra helps you support your patients in preparing for a seamless
                 care journey experience, without extra work added to you or your
@@ -42,7 +42,7 @@ const ChatBotCard = () => {
                 journey.
               </p>
               <div className="mt-[2rem]  md:w-[70%]">
-                <span>
+                <span data-aos="fade-in" data-aos-delay="300">
                   <FontAwesomeIcon
                     className="border-4 rounded-xl bg-white border-white"
                     icon={faHandHoldingMedical}
@@ -54,7 +54,7 @@ const ChatBotCard = () => {
                   </h6>
                 </span>
 
-                <span className="">
+                <span data-aos="fade-in" data-aos-delay="400">
                   <FontAwesomeIcon
                     className="border-4 rounded-xl  bg-white border-white mt-[2rem] text-left"
                     icon={faCommentSms}
@@ -67,7 +67,9 @@ const ChatBotCard = () => {
                   </h6>
                 </span>
               </div>
+              <div data-aos="fade-in" data-aos-delay="500">
               <SolidButton />
+              </div>
             </div>
           </div>
           <div className="md:grid grid-cols w-[100%] md:mr-[2rem]  md:mr-[-6rem] md:mt-[40rem] mt-[6rem]">
@@ -79,7 +81,7 @@ const ChatBotCard = () => {
                 height={200}
                 alt=""
               />
-              <div className="md:relative bottom-[9rem] right-[12rem]">
+              <div className="md:relative bottom-[9rem] right-[12rem]" data-aos="slide-left">
                 <ChatbotCard />
               </div>
             </div>

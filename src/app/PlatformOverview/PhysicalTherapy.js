@@ -11,7 +11,7 @@ function PhysicalTherapy() {
           style={{ backgroundColor: "#b8a1c5" }}
         >
           <div className="flex flex-row  ">
-            <div className=" flex flex-wrap">
+            <div className=" flex flex-wrap " data-aos="slide-right">
               <Image
                 className="rounded-xl h-[29rem] md:w-[100%] mt-[-4rem] "
                 src={"/images/therapy1.jpg"}
@@ -21,7 +21,7 @@ function PhysicalTherapy() {
               />
             </div>
 
-            <div className="flex flex-wrap md:ml-[-4rem]">
+            <div className="flex flex-wrap md:ml-[-4rem]" data-aos="slide-left">
               <Image
                 className="rounded-xl h-[27rem] md:w-[66%]"
                 src={"/images/exercise.jpg"}
@@ -32,7 +32,7 @@ function PhysicalTherapy() {
             </div>
           </div>
           <div
-            className=" text-black  md:w-[70%]"
+            className=" text-black  md:w-[70%]" data-aos="slide-left"
             style={{ backgroundColor: "#b8a1c5" }}
           >
             <div className="md:w-[70%] w-[100%]  ">
