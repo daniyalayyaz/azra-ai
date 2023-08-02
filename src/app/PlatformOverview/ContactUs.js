@@ -21,7 +21,7 @@ function ContactUs() {
                 className="mx-auto mt-4 mb-0 max-w-md space-y-4 font-normal text-base"
               >
                 <div>
-                  <label for="fullname" className="text-[16px]">
+                  <label htmlFor="fullname" className="text-[16px]">
                     Full Name
                   </label>
 
@@ -49,7 +49,7 @@ function ContactUs() {
                   </div>
                 </div>
                 <div>
-                  <label for="email" className="text-[16px]">
+                  <label htmlFor="email" className="text-[16px]">
                     Email Address
                   </label>
                   <div className="relative">
@@ -62,7 +62,7 @@ function ContactUs() {
                   </div>
                 </div>
                 <div>
-                  <label className="text-[16px]" for="message">
+                  <label className="text-[16px]" htmlFor="message">
                     Message
                   </label>
                   <div className="relative">
