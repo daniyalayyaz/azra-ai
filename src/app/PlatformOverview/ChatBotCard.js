@@ -22,10 +22,11 @@ const ChatBotCard = () => {
             <span>
               <FontAwesomeIcon
                 icon={faRobot}
-                style={{ color: "#60426c" }}
+                style={{ color: "#60426c", width: "40px", height: "30px" }}
                 width={40}
               />
             </span>
+
             <div
               className={` md:w-[82%] w-[100%] md:text-[2rem] text-[1rem] text-start semiboldfont md:text-left text-center  mt-[2rem]`}
             >

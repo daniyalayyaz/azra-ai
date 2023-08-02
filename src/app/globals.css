@@ -3,30 +3,32 @@
 @tailwind utilities;
 
 
+@keyframes d1 {to{clip-path: inset(0 -34% 0 0)}}
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.custom-loader {
+  width:50px;
+  height:12px;
+  background: radial-gradient(circle closest-side,white 90%,#0000) 0 0/33% 100% space;
+  clip-path: inset(0 100% 0 0);
+  animation:d1 0.5s steps(4) infinite;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
+::-webkit-scrollbar {
+  width: 10px;
+  scroll-behavior:smooth;
+  
+}
 
-/* body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
+::-webkit-scrollbar-thumb {
+  background-color: #60426c;
+  border-radius: 5px;
+  scroll-behavior:smooth;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #EDF2F7;
+  border-radius: 5px;
+}
 
 @font-face {
   font-family: ExtraBold_Font;

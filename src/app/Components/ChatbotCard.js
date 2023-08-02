@@ -12,9 +12,13 @@ function ChatbotCard() {
         <FontAwesomeIcon
           className="border-4 rounded-full mr-[1rem] text-left "
           icon={faQuoteLeft}
-          style={{ color: "#60426c", backgroundColor: "white" }}
-          width={150}
-          height={40}
+          style={{
+            color: "#60426c",
+            backgroundColor: "white",
+            borderColor: "white",
+          }}
+          width={120}
+          height={80}
         />
         <p className=" text-gray">
           Azra's AI chatbot is equity-focused and evidence based to boost

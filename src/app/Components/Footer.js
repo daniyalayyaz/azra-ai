@@ -55,9 +55,10 @@ function Footer() {
                     value-based care. Collaborate with us on research, digital
                     health platform development, and more!
                   </p>
-                  <div className="flex flex-row p-4 gap-4 justify-start">
+                  <div className="flex flex-row p-4 gap-4  place-items-center">
+                    {/* <div className="h-[28%]"> */}
                     <div
-                      className="border-8 rounded-full"
+                      className="border-8 rounded-full "
                       style={{
                         borderColor: "#60426c",
                         backgroundColor: "#60426c",
@@ -71,6 +72,7 @@ function Footer() {
                         width={16}
                       />
                     </div>
+                    {/* </div> */}
                     <div>
                       <FontAwesomeIcon
                         className="border-8 rounded-full"
@@ -80,7 +82,7 @@ function Footer() {
                           borderColor: "#60426c",
                           backgroundColor: "#60426c",
                         }}
-                        width={35}
+                        width={16}
                       />
                     </div>
                   </div>
