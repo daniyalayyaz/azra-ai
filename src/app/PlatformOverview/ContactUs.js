@@ -89,15 +89,18 @@ function ContactUs() {
 
             <div className=" md:w-[75%] md:mt-[12rem] regularfont  ">
               <h4 className="text-[1.5rem]">We respond within 24 hours</h4>
-              <div className="text-base mt-[1rem] leading-loose">
+              <div className="text-base mt-[1rem] leading-loose" data-aos="fade-in" data-aos-delay="200">
                 Our tech-enabled care pathways support families, friends,
                 caregivers, and community health workers to provide culturally
                 sensitive care navigation, thereby improving quality scores,
                 patient experience, and clinical and financial outcomes.
               </div>
-              <h6 className="semiboldfont text-[1rem] mt-[2rem]">
+              <h6 className="semiboldfont text-[1rem] mt-[2rem]" data-aos="fade-in" data-aos-delay="400">
                 4.9 out of 5 stars from 47 reviews
               </h6>
+              <div data-aos="fade-in" data-aos-delay="500">
+                Starts
+              </div>
             </div>
           </div>
         </div>
