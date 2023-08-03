@@ -41,10 +41,17 @@ const AzraChat = () => {
     platform: "web",
   });
   const [save, setSave] = useState([]);
+  const [pathwaySelected, setSelectedPathway] = useState("Pathway");
   const [platformSelected, setSelectedPlatform] = useState("Platform");
+
   const handlePlatformMenu = (e, option) => {
     setSelectedPlatform(option);
     setMeta({ ...meta, platform: e.target.value });
+  };
+
+  const handlePathwayMenu = (e, option) => {
+    setSelectedPathway(option);
+    setMeta({ ...meta, pathway: e.target.value });
   };
 
   const handleQuestionChange = (event) => {
@@ -108,9 +115,9 @@ const AzraChat = () => {
   return (
     <div className="flex justify-center py-4 overflow-y-scroll scroll-auto scrollbar-thin ">
       <div className="flex flex-col border-4 md:w-[70%] w-[96%] h-[100%] rounded-3xl border-white shadow-2xl ">
-        {/* Dropdowns or Select fields available on left side 
-        {/* <div
-          className=" rounded-2xl w-full md:w-[100%] text-white flex flex-row md:px-8 md:py-4 px-2 py-2 justify-between items-center hidden"
+        {/* Dropdowns or Select fields available on left side  */}
+        <div
+          className=" rounded-2xl w-full md:w-[100%] text-white flex flex-row md:px-8 md:py-4 px-2 py-2 justify-between items-center "
           style={{
             background: "linear-gradient(to left, #60426c 70%, #292626 100%)",
           }}
@@ -120,35 +127,28 @@ const AzraChat = () => {
               <Image src={"/images/logo.png"} width={170} height={25} alt=" " />
             </Link>
           </div>
-          Mobile Navigation
-          <div className="md:hidden">
-            <button className="rounded-md" onClick={toggleLinks}>
-              <FontAwesomeIcon
-                icon={faBars}
-                style={{ color: "white" }}
-                width={20}
-              />
-            </button>
+
+          <div className="flex flex-row justify-end items-center md:gap-2 ">
+            {/* Platform DropDown */}
+            <Dropdown
+              data={Platformdata}
+              platformSelected={platformSelected}
+              handlePlatformMenu={handlePlatformMenu}
+            />
+            {/* Language Dropdown  */}
+            <Dropdown
+              data={Languagedata}
+              platformSelected={LanguageSelected}
+              handlePlatformMenu={handleLanguageMenu}
+            />
+            <Dropdown
+              data={Pathwaydata}
+              platformSelected={pathwaySelected}
+              handlePlatformMenu={handlePathwayMenu}
+            />
           </div>
-          {/* Show the links when showLinks is true 
-        {showLinks && (
-          <div className="border-2 bg-white  w-[100%] h-[100%] ">
-            <div className="flex flex-col justify-end items-center md:gap-2 "></div>
-            {/* Platform DropDown
-              <Dropdown
-                data={Platformdata}
-                platformSelected={platformSelected}
-                handlePlatformMenu={handlePlatformMenu}
-              />
-              {/* Language Dropdown 
-              <Dropdown
-                data={Languagedata}
-                platformSelected={LanguageSelected}
-                handlePlatformMenu={handleLanguageMenu}
-              /> 
-          </div>
-        )}
-        <div className="md:flex flex-row justify-end items-center md:gap-2  hidden">
+
+          {/* <div className="md:flex flex-row justify-end items-center md:gap-2  hidden">
           {/* Platform DropDown 
           <Dropdown
             data={Platformdata}
@@ -161,19 +161,16 @@ const AzraChat = () => {
             platformSelected={LanguageSelected}
             handlePlatformMenu={handleLanguageMenu}
           />
-
           <Dropdown
             data={Languagedata}
             platformSelected={LanguageSelected}
             handlePlatformMenu={handleLanguageMenu}
           />
+        </div> */}
         </div>
-      </div>
-
-      */}
 
         <nav
-          className=" border-gray-200 dark:bg-gray-900"
+          className=" md:hidden border-gray-200 dark:bg-gray-900"
           style={{
             background: "linear-gradient(to left, #60426c 70%, #292626 100%)",
           }}
@@ -227,6 +224,15 @@ const AzraChat = () => {
                     handlePlatformMenu={handlePlatformMenu}
                   />
                 </li>
+                {/* Pathway Dropdown */}
+                <li>
+                  <Dropdown
+                    data={Pathwaydata}
+                    platformSelected={pathwaySelected}
+                    handlePlatformMenu={handlePathwayMenu}
+                  />
+                </li>
+
                 <li>Azra</li>
               </ul>
             </div>
