@@ -10,7 +10,7 @@ function Dropdown({ data, platformSelected, handlePlatformMenu }) {
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
-        <Menu.Button className="flex justify-between items-center md:w-[95%] w-[10%]  rounded-xl border border-gray-300 bg-white px-2 py-2 text-[18px] mediumfont text-black shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-[#60426c] focus:ring-offset-2 focus:ring-offset-gray-100">
+        <Menu.Button className="flex justify-between items-center md:w-[95%]   rounded-xl md:border border-gray-300 bg-white px-2 py-2 text-[18px] mediumfont text-black shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-[#60426c] focus:ring-offset-2 focus:ring-offset-gray-100">
           <div>{platformSelected}</div>
           <FontAwesomeIcon
             icon={faAngleDown}

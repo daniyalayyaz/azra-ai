@@ -161,8 +161,14 @@ const AzraChat = () => {
             platformSelected={LanguageSelected}
             handlePlatformMenu={handleLanguageMenu}
           />
+
+          <Dropdown
+            data={Languagedata}
+            platformSelected={LanguageSelected}
+            handlePlatformMenu={handleLanguageMenu}
+          />
         </div>
-      </div>{" "}
+      </div>
 
       */}
 
