@@ -28,10 +28,10 @@ const ChatBotCard = () => {
             </span>
 
             <div
-              className={` md:w-[82%] w-[100%] md:text-[2rem] text-[1rem] text-start semiboldfont md:text-left text-center  mt-[2rem]`} data-aos="fade-in"
+              className={` md:w-[82%] w-[100%] md:text-[2rem] text-[1rem] text-start semiboldfont md:text-left text-center  mt-[2rem]`}
+              data-aos="fade-in"
             >
-              AI-Powered Conversational Care Concierge Engages Patients By Text
-              Messages With Embedded Education Media and Content
+              Azra Chat
             </div>
             <div className=" pt-4" data-aos="fade-in" data-aos-delay="200">
               <p className=" md:w-[90%] w-[100%] text-gray-500 text-[1rem] regularfont text-start text-center md:text-left leading-loose">
@@ -68,7 +68,7 @@ const ChatBotCard = () => {
                 </span>
               </div>
               <div data-aos="fade-in" data-aos-delay="500">
-              <SolidButton />
+                <SolidButton />
               </div>
             </div>
           </div>
@@ -81,7 +81,10 @@ const ChatBotCard = () => {
                 height={200}
                 alt=""
               />
-              <div className="md:relative bottom-[9rem] right-[12rem]" data-aos="slide-left">
+              <div
+                className="md:relative bottom-[9rem] right-[12rem]"
+                data-aos="slide-left"
+              >
                 <ChatbotCard />
               </div>
             </div>
