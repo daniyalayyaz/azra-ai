@@ -10,6 +10,10 @@ import AnalyticsCard from "./AnalyticsCard";
 import OrthopedicCard from "./OrthopedicCard";
 import Footer from "../Components/Footer";
 import ContactUs from "./ContactUs";
+import ChatDetailSection from "./ChatDetailSection";
+import TryChathCard from "./TryChathCard";
+
+
 
 function MainPage() {
   useEffect(() => {
@@ -55,6 +59,10 @@ function MainPage() {
         {/* </div> */}
       </div>
       <ChatBotCard />
+      <div className=" md:py-[7rem] md:-mt-20 mt-12 md:bg-fuchsia-200 bg-fuchsia-200">
+      <ChatDetailSection/>
+      </div>
+      <TryChathCard/>
       {/* <SocialDeterminants />
       <PhysicalTherapy />
       <div className="mx-auto container ">
