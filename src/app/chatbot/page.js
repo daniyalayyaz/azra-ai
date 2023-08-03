@@ -41,18 +41,22 @@ const AzraChat = () => {
     platform: "web",
   });
   const [save, setSave] = useState([]);
-  const [pathwaySelected, setSelectedPathway] = useState("Pathway");
+  const [pathwaySelected, setSelectedPathway] = useState([]);
   const [platformSelected, setSelectedPlatform] = useState("Platform");
 
   const handlePlatformMenu = (e, option) => {
     setSelectedPlatform(option);
-    setMeta({ ...meta, platform: e.target.value });
+    setMeta({ ...meta, platform: option });
   };
 
   const handlePathwayMenu = (e, option) => {
-    setSelectedPathway(option);
-    setMeta({ ...meta, pathway: e.target.value });
+    const updatedPathwaySelected = pathwaySelected?.includes(option)
+      ? pathwaySelected?.filter(item => item !== option)
+      : [...pathwaySelected, option];
+    setSelectedPathway(updatedPathwaySelected);
+    setMeta({ ...meta, pathway: updatedPathwaySelected });
   };
+  
 
   const handleQuestionChange = (event) => {
     setQuestion({
@@ -104,7 +108,7 @@ const AzraChat = () => {
 
   const handleLanguageMenu = (e, option) => {
     setSelectedlanguage(option);
-    setMeta({ ...meta, language: e.target.value });
+    setMeta({ ...meta, language: option });
   };
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -143,8 +147,11 @@ const AzraChat = () => {
             />
             <Dropdown
               data={Pathwaydata}
-              platformSelected={pathwaySelected}
+              pathwaySelected={pathwaySelected}
+              platformSelected={"Pathway"}
+              setSelectedPathway={setSelectedPathway}
               handlePlatformMenu={handlePathwayMenu}
+              checkbox = {true}
             />
           </div>
 

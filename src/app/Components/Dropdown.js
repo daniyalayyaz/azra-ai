@@ -6,7 +6,14 @@ import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 function classNames(...classes) {
   return classes?.filter(Boolean).join(" ");
 }
-function Dropdown({ data, platformSelected, handlePlatformMenu }) {
+function Dropdown({ data, platformSelected, handlePlatformMenu, checkbox, pathwaySelected, setSelectedPathway }) {
+  const togglePathwaySelection = (value) => {
+    if (pathwaySelected?.includes(value)) {
+      setSelectedPathway(pathwaySelected?.filter(item => item !== value));
+    } else {
+      setSelectedPathway([...pathwaySelected, value]);
+    }
+  };
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
@@ -37,7 +44,7 @@ function Dropdown({ data, platformSelected, handlePlatformMenu }) {
             {data?.map((item, index) => (
               <Menu.Item
                 key={index}
-                onClick={(e) => handlePlatformMenu(e, item)}
+                onClick={checkbox ? (e) => handlePlatformMenu(e, item?.value) : (e) => handlePlatformMenu(e, item)}
               >
                 {({ active }) => (
                   <div
@@ -48,7 +55,16 @@ function Dropdown({ data, platformSelected, handlePlatformMenu }) {
                       " px-4 py-4 text-sm"
                     )}
                   >
-                    {item}
+                  {checkbox && 
+                  <input
+                      type="checkbox"
+                      className="mr-2"
+                      checked={pathwaySelected?.includes(item?.value)}
+                      onChange={() => togglePathwaySelection(item?.value)}
+                      readOnly
+                    />
+                  }
+                    {checkbox ? item?.label : item}
                   </div>
                 )}
               </Menu.Item>
