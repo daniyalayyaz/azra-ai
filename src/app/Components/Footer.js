@@ -58,7 +58,7 @@ function Footer() {
                   <div className="flex flex-row p-4 gap-4  place-items-center">
                     {/* <div className="h-[28%]"> */}
                     <div
-                      className="border-8 rounded-full "
+                      className="border-8 rounded-full h-[2.1rem] items-center"
                       style={{
                         borderColor: "#60426c",
                         backgroundColor: "#60426c",

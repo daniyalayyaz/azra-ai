@@ -10,7 +10,7 @@ function SolidButton() {
         style={{ backgroundColor: "#60426c" }}
       >
         <div className="flex flex-row place-items-center justify-center space-x-2">
-          <p className="text-center">Get In Touch</p>
+          <p className="text-center">Azra Chat</p>
           <FontAwesomeIcon
             className="ml-[7rem]"
             icon={faArrowRight}

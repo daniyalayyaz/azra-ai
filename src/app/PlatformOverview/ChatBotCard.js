@@ -16,9 +16,9 @@ const ChatBotCard = () => {
         className=" bg-no-repeat bg-cover bg-left mx-[2rem]"
         style={{ backgroundImage: `url("/images/chatbot-bg.png")` }}
       > */}
-      <div className=" flex justify-center md:mx-[6rem] md:mt-[8rem] md:px-[4rem] px-6">
+      <div className=" flex justify-center md:mx-[6rem] md:mt-[4rem] md:px-[4rem] px-6">
         <div className="md:flex  md:space-y-8 justify-between ">
-          <div className="text-black  order-first md:mr-[12rem]  mt-[7rem]">
+          <div className="text-black  order-last  ml-[14rem]  mt-[4rem]">
             <span className="fadeIn1">
               <FontAwesomeIcon
                 icon={faRobot}
@@ -54,7 +54,7 @@ const ChatBotCard = () => {
                   </h6>
                 </span>
 
-                <span data-aos="fade-in" data-aos-delay="400">
+                <span data-aos="fade-in" data-aos-delay="300">
                   <FontAwesomeIcon
                     className="border-4 rounded-xl  bg-white border-white mt-[2rem] text-left"
                     icon={faCommentSms}
@@ -67,7 +67,7 @@ const ChatBotCard = () => {
                   </h6>
                 </span>
               </div>
-              <div data-aos="fade-in" data-aos-delay="500">
+              <div data-aos="fade-in" data-aos-delay="100">
                 <SolidButton />
               </div>
             </div>
@@ -75,15 +75,15 @@ const ChatBotCard = () => {
           <div className="md:grid grid-cols w-[100%] md:mr-[2rem]  md:mr-[-6rem] md:mt-[40rem] mt-[6rem]">
             <div>
               <Image
-                className="md:h-[46rem]  shadow-lg  inline-block  shadow-gray-500 rounded-t-[2rem] rounded-r-[2rem]"
+                className="md:h-[40rem]  shadow-lg  inline-block  shadow-gray-500 rounded-t-[2rem] rounded-r-[2rem]"
                 src={"/images/chatbot.png"}
                 width={400}
                 height={200}
                 alt=""
               />
               <div
-                className="md:relative bottom-[9rem] right-[12rem]"
-                data-aos="slide-left"
+                className="md:relative bottom-[9rem] left-[8rem]"
+                // data-aos="slide-right"
               >
                 <ChatbotCard />
               </div>

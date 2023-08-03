@@ -10,6 +10,7 @@ import AnalyticsCard from "./AnalyticsCard";
 import OrthopedicCard from "./OrthopedicCard";
 import Footer from "../Components/Footer";
 import ContactUs from "./ContactUs";
+import FAQs from "./FAQs";
 
 function MainPage() {
   useEffect(() => {
@@ -67,6 +68,7 @@ function MainPage() {
           </div>
         </div>
       </div> */}
+      <FAQs />
       <ContactUs />
       <Footer />
     </div>
