@@ -15,14 +15,14 @@
 
 ::-webkit-scrollbar {
   width: 10px;
-  scroll-behavior:smooth;
+  scroll-behavior:auto;
   
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #60426c;
   border-radius: 5px;
-  scroll-behavior:smooth;
+  scroll-behavior:auto;
 }
 
 ::-webkit-scrollbar-track {

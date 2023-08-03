@@ -8,6 +8,7 @@ import {
   faRobot,
 } from "@fortawesome/free-solid-svg-icons";
 import ChatbotCard from "../Components/ChatbotCard";
+import Link from "next/link";
 
 const ChatBotCard = () => {
   return (
@@ -18,7 +19,7 @@ const ChatBotCard = () => {
       > */}
       <div className=" flex justify-center md:mx-[6rem] md:mt-[4rem] md:px-[4rem] px-6">
         <div className="md:flex  md:space-y-8 justify-between ">
-          <div className="text-black  order-last  ml-[14rem]  mt-[4rem]">
+          <div className="text-black  order-last  md:ml-[14rem]  mt-[4rem]">
             <span className="fadeIn1">
               <FontAwesomeIcon
                 icon={faRobot}
@@ -28,20 +29,20 @@ const ChatBotCard = () => {
             </span>
 
             <div
-              className={` md:w-[82%] w-[100%] md:text-[2rem] text-[1rem] text-start semiboldfont md:text-left text-center  mt-[2rem]`}
+              className={` md:w-[82%] w-[100%]  text-start  md:text-left text-center md:text-[56px] leading-none text-[32px] semiboldfont mt-[2rem]`}
               data-aos="fade-in"
             >
               Azra Chat
             </div>
             <div className=" pt-4" data-aos="fade-in" data-aos-delay="200">
-              <p className=" md:w-[90%] w-[100%] text-gray-500 text-[1rem] regularfont text-start text-center md:text-left leading-loose">
+              <p className=" md:w-[90%] w-[100%] text-gray-500 regularfont md:text-lg text-[15px] text-start text-center md:text-left leading-loose">
                 Azra helps you support your patients in preparing for a seamless
                 care journey experience, without extra work added to you or your
                 staff. Deliver accessible, actionable and always-on
                 evidence-based guidance to your patients throughout their care
                 journey.
               </p>
-              <div className="mt-[2rem]  md:w-[70%]">
+              <div className="mt-[2rem]  md:w-[72%]">
                 <span data-aos="fade-in" data-aos-delay="300">
                   <FontAwesomeIcon
                     className="border-4 rounded-xl bg-white border-white"
@@ -49,7 +50,7 @@ const ChatBotCard = () => {
                     style={{ color: "#60426c" }}
                     width={30}
                   />
-                  <h6 className="semiboldfont text-left text-[1rem] order-last mt-[-1.4rem] ml-[3.5rem]">
+                  <h6 className="semiboldfont text-left  md:text-[16px] text-[15px] order-last mt-[-1.4rem] ml-[3.5rem]">
                     Patient Focused
                   </h6>
                 </span>
@@ -61,14 +62,16 @@ const ChatBotCard = () => {
                     style={{ color: "#60426c" }}
                     width={30}
                   />
-                  <h6 className="semiboldfont text-[1rem] order-last mt-[-1.5rem] ml-[3.5rem] text-left">
+                  <h6 className="semiboldfont  md:text-[16px] text-[15px] order-last mt-[-1.5rem] ml-[3.5rem] text-left">
                     Instant Replies Powered by Our Large Language Model Care
                     Concierge
                   </h6>
                 </span>
               </div>
               <div data-aos="fade-in" data-aos-delay="100">
-                <SolidButton />
+                <Link href="/chatbot">
+                  <SolidButton />
+                </Link>
               </div>
             </div>
           </div>

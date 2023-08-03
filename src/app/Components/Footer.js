@@ -6,6 +6,7 @@ import {
   faLinkedinIn,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
 function Footer() {
   return (
     <>
@@ -64,26 +65,30 @@ function Footer() {
                         backgroundColor: "#60426c",
                       }}
                     >
-                      <FontAwesomeIcon
-                        icon={faLinkedin}
-                        style={{
-                          color: "#d0eae1",
-                        }}
-                        width={16}
-                      />
+                      <Link href="https://www.linkedin.com/company/azra-care">
+                        <FontAwesomeIcon
+                          icon={faLinkedin}
+                          style={{
+                            color: "#d0eae1",
+                          }}
+                          width={16}
+                        />
+                      </Link>
                     </div>
                     {/* </div> */}
                     <div>
-                      <FontAwesomeIcon
-                        className="border-8 rounded-full"
-                        icon={faTwitter}
-                        style={{
-                          color: "#d0eae1",
-                          borderColor: "#60426c",
-                          backgroundColor: "#60426c",
-                        }}
-                        width={16}
-                      />
+                      <Link href="https://twitter.com/AzraCare">
+                        <FontAwesomeIcon
+                          className="border-8 rounded-full"
+                          icon={faTwitter}
+                          style={{
+                            color: "#d0eae1",
+                            borderColor: "#60426c",
+                            backgroundColor: "#60426c",
+                          }}
+                          width={16}
+                        />
+                      </Link>
                     </div>
                   </div>
                   {/* <Link className=" text-black-500 hover:text-purple-800 active:text-purple-600 transition duration-100">

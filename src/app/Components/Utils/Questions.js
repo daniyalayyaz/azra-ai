@@ -1,11 +1,19 @@
 export const FAQsdata = [
   {
-    question: "How does the product work?",
+    question:
+      "How does Azra Chat work and where does the information come from?",
     answer:
-      "This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random or otherwise generated. It may be used to display a sample of fonts or generate text for testing.",
+      "Azra Chat combines OpenAI's language model with Azra's Well Guide, providing information on osteoporosis and osteopenia through an easy-to-use chat interface. The chatbot also provides links to related articles on the Well Guide.",
   },
   {
-    question: "What are the Features?",
-    answer: "Guides about joint pains",
+    question:
+      "Can Azra Chat replace my healthcare provider or medical professional?",
+    answer:
+      "No. Azra Chat is not a substitute for professional medical advice, diagnosis, or treatment. Always consult with your healthcare provider or medical professional before making any changes to your treatment plan or lifestyle.",
+  },
+  {
+    question: "Is there a cost to using Azra Chat?",
+    answer:
+      "Azra Chat is entirely free and allows up to 6 daily responses. By enrolling in our personalized exercise program designed for women with osteoporosis and osteopenia, members unlock unlimited access to Wellen Chat. You can sign up for a free trial of your personalized exercise program here.",
   },
 ];

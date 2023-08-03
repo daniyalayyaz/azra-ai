@@ -7,7 +7,12 @@ import {
 } from "@material-tailwind/react";
 import { FAQsdata } from "../Components/Utils/Questions";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMinus, faPlus, faRobot } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCircleQuestion,
+  faMinus,
+  faPlus,
+  faRobot,
+} from "@fortawesome/free-solid-svg-icons";
 
 function FAQs({ data }) {
   const [open, setOpen] = useState(0);
@@ -21,25 +26,32 @@ function FAQs({ data }) {
     unmount: { scale: 0.9 },
   };
   return (
-    <>
-      <div className="absolute  md:-mt-[8.5em]  z-0 opacity-30">
-        <Image src={"/faqbg.png"} width={1350} height={390} />
-      </div>
+    <div className="mx-auto container px-6">
       <div className=" text-center md:mt-40 mt-8 relative z-10">
         <div className="text-center w-full">
-          <div className="mx-auto flex justify-center">
-            <FontAwesomeIcon icon={faRobot} width={90} height={38} alt="" />
+          <div className="absolute md:-mt-[8rem] z-0  opacity-30">
+            <Image src={"/images/faqbg.png"} width={1350} height={390} />
           </div>
-          <h1 className="text-6xl SEMIBF p-5">FAQs</h1>
+          <div className="relative flex justify-center">
+            {/* <div className="md:w-[100%] md:h-[100%]"> */}
+            <FontAwesomeIcon
+              className="md:w-[7%] md:h-[7%] w-[12%] h-[12%]"
+              icon={faCircleQuestion}
+              alt=""
+              style={{ color: "#60426c" }}
+            />
+            {/* </div> */}
+          </div>
+          <h1 className="md:text-[56px] leading-none text-[32px] semiboldfont p-5">
+            FAQs
+          </h1>
           <div className="flex justify-center">
-            <p className="text-gray-700 text-xl REGULARF pb-5 w-1/2">
-              We are here to answer your queries
-            </p>
+            <p className="text-gray-700 text-xl regularfont pb-5 w-1/2"></p>
           </div>
         </div>
       </div>
-      <div className="flex justify-center">
-        <div className="  md:p-12 p-4  md:w-[60rem]">
+      <div className="flex justify-center mb-[6rem]">
+        <div className="  md:p-12 p-4  md:w-[90%]">
           <Fragment>
             {FAQsdata?.map((item, index) => {
               const isOpen = open === index + 1;
@@ -58,12 +70,12 @@ function FAQs({ data }) {
                   >
                     <AccordionHeader
                       onClick={() => handleOpen(index + 1)}
-                      className="text-black text-xl font-medium border-0"
+                      className="text-black mediumfont border-0"
                     >
                       {item?.question}
                     </AccordionHeader>
                     {isOpen && (
-                      <AccordionBody className="text-gray-400 text-start text-[16px] REGULARF md:w-[43em] w-[20rem] py-1 mb-5">
+                      <AccordionBody className="text-gray-400 text-start text-[16px] regularfont md:w-[43em] w-[20rem] py-1 mb-5">
                         {item?.answer}
                       </AccordionBody>
                     )}
@@ -76,7 +88,7 @@ function FAQs({ data }) {
           </Fragment>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

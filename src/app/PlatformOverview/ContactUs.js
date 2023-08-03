@@ -8,7 +8,7 @@ function ContactUs() {
         style={{ backgroundColor: "#d0eae1" }}
       >
         <div className="mx-auto container">
-          <div className="md:grid grid-cols-2 md:text-left  text-center h-full w-[100%]  px-6">
+          <div className="md:grid grid-cols-2 md:text-left  text-left h-full w-[100%]  px-6">
             <div className=" pt-[104px] pb-[104px]">
               <div className="mx-auto max-w-lg ">
                 <h1 className="text-[2.5rem]  text-3xl semiboldfont md:ml-6">
@@ -67,7 +67,7 @@ function ContactUs() {
                   </label>
                   <div className="relative">
                     <textarea
-                      className="md:w-[100%]  w-[80%] rounded-lg border p-3 text-sm border-gray-300"
+                      className="md:w-[100%]  w-[75%] rounded-lg border p-3 text-sm border-gray-300"
                       rows="3"
                       id="message"
                       name="message"

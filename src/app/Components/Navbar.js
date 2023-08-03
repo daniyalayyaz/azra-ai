@@ -81,7 +81,6 @@ const Navbar = () => {
 
   return (
     <header className="bg-[#60426c]  w-[100%]">
-      {/* <div className="container mx-auto"> */}
       <div className="flex items-center justify-between px-10 py-[20px]">
         <div className="w-[30%] md:w-[70%]">
           <Link href="/">
@@ -129,7 +128,6 @@ const Navbar = () => {
           </ul>
         </nav>
       </div>
-      {/* </div> */}
     </header>
   );
 };
