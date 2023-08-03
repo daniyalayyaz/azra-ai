@@ -78,7 +78,7 @@ const ChatBotCard = () => {
           <div className="md:grid grid-cols w-[100%] md:mr-[2rem]  md:mr-[-6rem] md:mt-[40rem] mt-[6rem]">
             <div>
               <Image
-                className="md:h-[40rem]  shadow-lg  inline-block  shadow-gray-500 rounded-t-[2rem] rounded-r-[2rem]"
+                className="md:h-[40rem]  inline-block"
                 src={"/images/chatbot.png"}
                 width={400}
                 height={200}

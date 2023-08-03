@@ -87,7 +87,7 @@ const Navbar = () => {
   return (
     <>
       <div
-        className="flex rounded-2xl   text-white  md:px-8 md:py-4 px-2 py-2  items-center md:block hidden"
+        className="flex  text-white  md:px-8 md:py-4 px-2 py-2  items-center md:block hidden"
         style={{
           background: "linear-gradient(to left, #60426c 70%, #292626 100%)",
         }}
