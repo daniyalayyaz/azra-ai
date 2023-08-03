@@ -7,17 +7,15 @@ function PromptMessage({ queriesData, save }) {
     <div className="flex-1 space-y-6 overflow-y-auto rounded-xl bg-white-200 p-4 text-sm leading-6 text-slate-900 shadow-sm dark:bg-white-200 dark:text-slate-900 sm:text-base sm:leading-7">
       {/* By Default Message by Chatbot */}
       <div className="flex items-start">
-        <span>
+        <div>
           <FontAwesomeIcon
+            className="md:w-[40px] md:h-[30px] w-[1.8rem] h-[1.8rem]"
             icon={faRobot}
             style={{
               color: "#60426c",
-              width: "40px",
-              height: "30px",
             }}
-            width={40}
           />
-        </span>
+        </div>
         <div className="rounded-b-xl rounded-tr-xl bg-slate-100 p-4 dark:bg-slate-100 sm:max-w-md md:max-w-2xl">
           <p className="mb-2 mx-5 text-base">
             Meet Azra Care - your companion built to support you through the
